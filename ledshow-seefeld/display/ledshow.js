@@ -7,18 +7,19 @@ const H = canvas.height;
 const FPS = 30;
 const sceneSeconds = 3.2;
 const sceneFrames = Math.round(sceneSeconds * FPS);
+const BRAND_GREEN = "#43913d";
 
 const scenes = [
-  { id: "brand", name: "Brand", words: ["UNSER", "KRAUT", "SEEFELD"], accent: "#6dff83", product: "leaf" },
-  { id: "cbd", name: "CBD Oele", words: ["CBD", "OELE"], accent: "#77ff7f", product: "bottle", asset: "../assets/raw/cbd-oel-01.png" },
-  { id: "tee", name: "Tee Blueten", words: ["TEE", "BLUETEN"], accent: "#a7ff6d", product: "pouch", asset: "../assets/raw/hanftee-01.png" },
-  { id: "honig", name: "Honig Tirol", words: ["HONIG", "TIROL"], accent: "#ffc247", product: "jar", asset: "../assets/raw/cannabee-honig-01.png" },
-  { id: "vapes", name: "Vapes 18+", words: ["VAPES", "18+"], accent: "#ff4f91", product: "vape", asset: "../assets/raw/vape-01.png" },
-  { id: "snacks", name: "Bio Snacks", words: ["BIO", "SNACKS"], accent: "#f3ff8c", product: "seeds", asset: "../assets/raw/hanfsamen-01.png" },
-  { id: "pflege", name: "Pflege Creme", words: ["PFLEGE", "CREME"], accent: "#89d7ff", product: "cream", asset: "../assets/raw/pflege-creme-01.png" },
-  { id: "tiere", name: "Fuer Tiere", words: ["FUER", "TIERE"], accent: "#d4ff81", product: "paw", asset: "../assets/raw/tierprodukt-01.png" },
+  { id: "brand", name: "Hanfblatt", words: ["UNSER", "KRAUT", "SEEFELD"], accent: BRAND_GREEN, product: "leaf", assets: ["../assets/raw/hanfblatt-01.png"] },
+  { id: "cbd", name: "CBD Oele", words: ["CBD", "OELE"], accent: BRAND_GREEN, product: "bottle", assets: ["../assets/raw/cbd-oel-01.png", "../assets/raw/cbd-oel-01.jpg"] },
+  { id: "tee", name: "Tee Blueten", words: ["TEE", "BLUETEN"], accent: "#8ecf55", product: "pouch", assets: ["../assets/raw/hanftee-01.png", "../assets/raw/hanftee-01.jpg"] },
+  { id: "honig", name: "Honig Tirol", words: ["HONIG", "TIROL"], accent: "#ffc247", product: "jar", assets: ["../assets/raw/cannabee-honig-01.png", "../assets/raw/cannabee-honig-01.jpg"] },
+  { id: "vapes", name: "Vapes 18+", words: ["VAPES", "18+"], accent: "#ff4f91", product: "vape", assets: ["../assets/raw/vape-01.png", "../assets/raw/vape-01.jpg"] },
+  { id: "snacks", name: "Bio Snacks", words: ["BIO", "SNACKS"], accent: "#f3ff8c", product: "seeds", assets: ["../assets/raw/hanfsamen-01.png", "../assets/raw/hanfsamen-01.jpg"] },
+  { id: "pflege", name: "Pflege Creme", words: ["PFLEGE", "CREME"], accent: "#89d7ff", product: "cream", assets: ["../assets/raw/pflege-creme-01.png", "../assets/raw/pflege-creme-01.jpg"] },
+  { id: "tiere", name: "Fuer Tiere", words: ["FUER", "TIERE"], accent: "#d4ff81", product: "paw", assets: ["../assets/raw/tierprodukt-01.png", "../assets/raw/tierprodukt-01.jpg"] },
   { id: "gift", name: "Geschenk Idee", words: ["GESCHENK", "IDEE"], accent: "#ffb55c", product: "gift" },
-  { id: "cta", name: "Jetzt Rein", words: ["JETZT", "REIN", "SEEFELD"], accent: "#6dff83", product: "leaf" },
+  { id: "cta", name: "Beratung", words: ["KOMM", "REIN", "BERATUNG"], accent: BRAND_GREEN, product: "leaf", assets: ["../assets/raw/hanfblatt-01.png"] },
 ];
 
 const totalFrames = scenes.length * sceneFrames;
@@ -40,10 +41,13 @@ sceneList.innerHTML = scenes
   .join("");
 
 for (const scene of scenes) {
-  if (!scene.asset) continue;
-  const img = new Image();
-  img.src = scene.asset;
-  img.onload = () => imageCache.set(scene.asset, img);
+  for (const asset of scene.assets || []) {
+    const img = new Image();
+    img.src = asset;
+    img.onload = () => {
+      if (!imageCache.has(scene.id)) imageCache.set(scene.id, img);
+    };
+  }
 }
 
 toggle.addEventListener("click", () => {
@@ -108,7 +112,7 @@ function drawBackground(scene, t) {
   ctx.fillStyle = grad;
   ctx.fillRect(0, 0, W, H);
 
-  ctx.fillStyle = "rgba(109,255,131,0.08)";
+  ctx.fillStyle = "rgba(67,145,61,0.11)";
   for (let x = -80; x < W + 60; x += 18) {
     ctx.fillRect(Math.round(x + t * 22), 0, 1, H);
   }
@@ -132,7 +136,7 @@ function drawScanlines(t) {
 }
 
 function drawWords(scene, ease) {
-  const x = 10 - (1 - ease) * 18;
+  const x = 10;
   const y = scene.words.length === 3 ? 32 : 42;
   const fontSize = scene.words.some((word) => word.length > 6) ? 17 : 23;
 
@@ -155,7 +159,7 @@ function drawWords(scene, ease) {
 function drawCornerInfo(scene, t) {
   ctx.font = "700 7px Arial";
   ctx.fillStyle = scene.id === "cta" ? "#f6ffe9" : hexAlpha(scene.accent, 0.82);
-  ctx.fillText("UNSER-KRAUT.AT", 8, 115);
+  ctx.fillText(scene.id === "cta" ? "WIR BERATEN GERN" : "UNSER-KRAUT.AT", 8, 115);
 
   if (scene.id === "vapes") {
     ctx.fillStyle = "#f6ffe9";
@@ -172,9 +176,9 @@ function drawCornerInfo(scene, t) {
 }
 
 function drawProduct(scene, ease, t) {
-  const img = scene.asset ? imageCache.get(scene.asset) : null;
+  const img = imageCache.get(scene.id);
   if (img) {
-    const size = 78 + ease * 6;
+    const size = scene.id === "brand" || scene.id === "cta" ? 70 + ease * 5 : 78 + ease * 6;
     const x = 118 + Math.sin(t * Math.PI * 2) * 2 - size / 2;
     const y = 28 - (1 - ease) * 16;
     ctx.save();

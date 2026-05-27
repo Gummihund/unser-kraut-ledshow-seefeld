@@ -85,6 +85,20 @@ ledshow-seefeld/display/index.html
 
 Diese Preview braucht keine Installation und keinen Build-Schritt. Sie kann auf einem anderen PC direkt im Browser geoeffnet werden und laeuft nativ als 192 x 128 Canvas mit pixeliger Kontrollskalierung. Wenn Produktbilder unter `assets/raw/` liegen, werden sie automatisch eingebunden; ohne Bilder nutzt die Show klare Vektor-Packshots.
 
+Fuer den echten LED-Screen bitte nicht die HTML-Datei hochladen. Der Screen braucht eine fertige Offline-Datei:
+
+```text
+ledshow-seefeld/output/mp4/unser-kraut-seefeld-ledshow-192x128.mp4
+```
+
+Diese MP4 enthaelt alle Bilder und Texte fest eingebettet und funktioniert nach dem Upload ohne Internet.
+
+Offline-Render:
+
+```powershell
+python ledshow-seefeld/tools/render_offline_ledshow.py
+```
+
 ## Ordnerstruktur
 
 ```text
@@ -97,6 +111,8 @@ ledshow-seefeld/
     index.html
     styles.css
     ledshow.js
+  tools/
+    render_offline_ledshow.py
   assets/
     raw/          # manuell geladene Produktbilder von unser-kraut.at
     prepared/     # freigestellte oder zugeschnittene Bilder

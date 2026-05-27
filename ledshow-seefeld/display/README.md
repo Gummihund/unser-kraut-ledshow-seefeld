@@ -8,7 +8,9 @@ Diese Preview ist absichtlich statisch gebaut: kein Build-Step, kein npm, keine 
 2. `ledshow-seefeld/display/index.html` im Browser oeffnen.
 3. Optional Produktbilder lokal in `ledshow-seefeld/assets/raw/` legen.
 
-Die Show laeuft auch ohne Produktbilder. Dann werden klare Vektor-Packshots angezeigt, die fuer 192 x 128 px optimiert sind.
+Die Browser-Preview laeuft auch ohne Produktbilder. Dann werden klare Vektor-Packshots angezeigt, die fuer 192 x 128 px optimiert sind.
+
+Wichtig fuer den echten LED-Screen: Lade nicht die HTML-Datei auf den Controller. Fuer den Screen wird eine offline gerenderte Video-Datei aus `output/mp4/` oder `output/avi/` verwendet. Diese Datei enthaelt alle Pixel bereits fest im Video und braucht danach kein Internet.
 
 ## Lokale Produktbilder
 
@@ -28,4 +30,18 @@ ledshow-seefeld/assets/raw/tierprodukt-01.png
 
 ## Export-Idee
 
-Die Canvas ist nativ `192 x 128`. Fuer die finale LEDshow kannst du spaeter daraus Frames aufnehmen oder die bestehende `render_commands.sh` nutzen, sobald eine Frame-Sequenz unter `output/frames/frame_%04d.png` liegt.
+Die Canvas ist nativ `192 x 128`. Fuer die finale LEDshow gibt es einen Offline-Renderer:
+
+```powershell
+python ledshow-seefeld/tools/render_offline_ledshow.py
+```
+
+Der Renderer erstellt:
+
+```text
+ledshow-seefeld/output/frames/frame_0000.png
+ledshow-seefeld/output/preview/unser-kraut-seefeld-ledshow-preview.gif
+ledshow-seefeld/output/mp4/unser-kraut-seefeld-ledshow-192x128.mp4
+```
+
+Falls lokal kein MP4-Encoder verfuegbar ist, entstehen trotzdem die PNG-Frames und die GIF-Preview. Mit `ffmpeg` kann daraus anschliessend die LEDshow-MP4/AVI aus `render_commands.sh` erzeugt werden.
