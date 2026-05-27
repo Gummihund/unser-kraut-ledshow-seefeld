@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unser Kraut LEDshow Seefeld</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app">
+      <section class="stage-wrap" aria-label="LED Vorschau">
+        <canvas id="led" width="192" height="128"></canvas>
+      </section>
+
+      <aside class="panel" aria-label="Kontrollen">
+        <div>
+          <p class="eyebrow">192 x 128 px</p>
+          <h1>Unser Kraut Seefeld LED Loop</h1>
+        </div>
+
+        <div class="controls">
+          <button id="toggle" type="button">Pause</button>
+          <button id="restart" type="button">Restart</button>
+        </div>
+
+        <div class="meter">
+          <span id="sceneName">Brand</span>
+          <span id="timecode">00.0s</span>
+        </div>
+        <div class="bar" aria-hidden="true"><span id="progress"></span></div>
+
+        <ol id="scenes" class="scenes"></ol>
+      </aside>
+    </main>
+
+    <script src="ledshow.js"></script>
+  </body>
+</html>

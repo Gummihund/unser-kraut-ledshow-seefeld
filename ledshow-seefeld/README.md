@@ -75,6 +75,16 @@ PC-Kontrollvorschau:
 - nearest-neighbor Skalierung
 - wirkt pixelig, aber zeigt am PC die echte LED-Pixelwirkung ohne Weichzeichnung
 
+## Portable Browser-Preview
+
+Eine sofort nutzbare Preview liegt unter:
+
+```text
+ledshow-seefeld/display/index.html
+```
+
+Diese Preview braucht keine Installation und keinen Build-Schritt. Sie kann auf einem anderen PC direkt im Browser geoeffnet werden und laeuft nativ als 192 x 128 Canvas mit pixeliger Kontrollskalierung. Wenn Produktbilder unter `assets/raw/` liegen, werden sie automatisch eingebunden; ohne Bilder nutzt die Show klare Vektor-Packshots.
+
 ## Ordnerstruktur
 
 ```text
@@ -83,6 +93,10 @@ ledshow-seefeld/
   storyboard.md
   sources.md
   render_commands.sh
+  display/
+    index.html
+    styles.css
+    ledshow.js
   assets/
     raw/          # manuell geladene Produktbilder von unser-kraut.at
     prepared/     # freigestellte oder zugeschnittene Bilder

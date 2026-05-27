@@ -1,0 +1,6 @@
+ledshow-seefeld/assets/raw/*
+!ledshow-seefeld/assets/raw/.gitkeep
+ledshow-seefeld/assets/prepared/*
+!ledshow-seefeld/assets/prepared/.gitkeep
+ledshow-seefeld/output/*
+!ledshow-seefeld/output/.gitkeep

@@ -6,6 +6,19 @@
 - Shop/Marke: Unser Kraut, Seefeld in Tirol
 - GitHub-Zielrepo: https://github.com/Gummihund/unser-kraut-ledshow-seefeld
 
+## Direkte Quellseiten fuer Produktbilder
+
+Diese Seiten enthalten passende Produktbilder fuer die LED-Szenen. Bitte Bilder lokal speichern und mit den Dateinamen aus dem Asset-Plan in `assets/raw/` legen.
+
+- CBD Oele: https://www.unser-kraut.at/cbd-oel-kaufen
+- Hanftee: https://www.unser-kraut.at/hanftee-hanfbluetentee-hanffruechtetee
+- Hanfblueten / Aroma-Hanf: https://www.unser-kraut.at/hanfblueten
+- Cannabee / Honig: https://www.unser-kraut.at/onlineshop
+- Vapes: https://www.unser-kraut.at/vapes
+- CBD Koerperpflege: https://www.unser-kraut.at/cbd-koerperpflege
+- CBD Gesichtspflege: https://www.unser-kraut.at/cbd-gesichtspflege-antiaging
+- Tierprodukte: https://www.unser-kraut.at/cbd-oel-hund-katze-pferd
+
 ## Zu sammelnde Produktbilder
 
 Die Produktbilder sollen frisch von unser-kraut.at geladen und in `assets/raw/` abgelegt werden. Fuer die finale LEDshow-Datei sind grosse, kontrastreiche Einzelprodukte besser als komplette Shop-Screenshots.
