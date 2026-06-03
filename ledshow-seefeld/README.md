@@ -75,6 +75,38 @@ PC-Kontrollvorschau:
 - nearest-neighbor Skalierung
 - wirkt pixelig, aber zeigt am PC die echte LED-Pixelwirkung ohne Weichzeichnung
 
+## Download und Uebertragung auf den LED-Monitor
+
+Auf einem zweiten PC zuerst das private GitHub-Repo klonen:
+
+```powershell
+git clone https://github.com/Gummihund/unser-kraut-ledshow-seefeld.git
+cd unser-kraut-ledshow-seefeld
+```
+
+Die fertige Datei fuer den LED-Monitor liegt danach hier:
+
+```text
+ledshow-seefeld\output\mp4\unser-kraut-seefeld-ledshow-192x128.mp4
+```
+
+Empfohlener Ablauf:
+
+1. LEDshow Suite / LED Max / Onbon starten.
+2. LED-Controller per LAN-Kabel mit dem PC verbinden.
+3. Screen/Controller in der LED-Software erkennen lassen.
+4. MP4-Datei importieren:
+
+```text
+ledshow-seefeld\output\mp4\unser-kraut-seefeld-ledshow-192x128.mp4
+```
+
+5. Aufloesung bei 192 x 128 px belassen.
+6. Programm/Video an den Controller senden.
+7. Den Speichern-/Upload-Modus der Software verwenden, damit die Show im Controller bleibt und nicht nur als PC-Live-Playback laeuft.
+
+Wenn MP4 auf einem aelteren Controller nicht akzeptiert wird, aus derselben Show eine AVI/MPEG4-Kompatibilitaetsversion rendern und diese uebertragen.
+
 ## Portable Browser-Preview
 
 Eine sofort nutzbare Preview liegt unter:
