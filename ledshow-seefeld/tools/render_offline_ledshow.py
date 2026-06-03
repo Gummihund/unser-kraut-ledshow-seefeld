@@ -46,6 +46,7 @@ def font(size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
 
 FONT_BIG = font(23)
 FONT_MED = font(17)
+FONT_CTA = font(14)
 FONT_SMALL = font(8)
 FONT_TINY = font(7)
 
@@ -139,15 +140,20 @@ def draw_product(base: Image.Image, draw: ImageDraw.ImageDraw, scene_id: str, ki
         product.thumbnail((size, size), Image.Resampling.LANCZOS)
         product = ImageEnhance.Contrast(product).enhance(1.14)
         product = product.filter(ImageFilter.SHARPEN)
-        shadow = Image.new("RGBA", product.size, (*hex_to_rgb(accent), 0))
-        alpha = product.getchannel("A").filter(ImageFilter.GaussianBlur(5))
+        shadow_color = (0, 0, 0) if scene_id == "pflege" else hex_to_rgb(accent)
+        shadow = Image.new("RGBA", product.size, (*shadow_color, 0))
+        blur = 3 if scene_id == "pflege" else 5
+        opacity = 0.34 if scene_id == "pflege" else 0.76
+        alpha = product.getchannel("A").filter(ImageFilter.GaussianBlur(blur))
+        alpha = alpha.point(lambda value: round(value * opacity))
         shadow.putalpha(alpha)
         x = round(cx - product.width / 2)
         if scene_id in {"hanfblatt", "beratung"}:
             y = round(cy - product.height / 2)
         else:
             y = round(30 - (1 - ease) * 12)
-        base.alpha_composite(shadow, (x + 2, y + 2))
+        offset = (2, 4) if scene_id == "pflege" else (2, 2)
+        base.alpha_composite(shadow, (x + offset[0], y + offset[1]))
         base.alpha_composite(product, (x, y))
         return
 
@@ -183,6 +189,16 @@ def draw_leaf(draw: ImageDraw.ImageDraw, x: int, y: int, color: tuple[int, int, 
 
 def draw_words(draw: ImageDraw.ImageDraw, words: list[str], accent: str, scene_id: str, ease: float) -> None:
     x = 10
+    if scene_id == "beratung":
+        cta_lines = ["KOMM REIN", "WIR BERATEN", "DICH GERNE"]
+        for i, word in enumerate(cta_lines):
+            yy = 25 + i * 18
+            fill = accent if i == 2 else "#f6ffe9"
+            draw.text((x - 1, yy), word, fill=(0, 0, 0), font=FONT_CTA, stroke_width=2, stroke_fill=(0, 0, 0))
+            draw.text((x, yy), word, fill=fill, font=FONT_CTA)
+        draw.rectangle((10, 86, round(58 + ease * 18), 89), fill=accent)
+        return
+
     y = 32 if len(words) == 3 else 42
     fnt = FONT_MED if any(len(word) > 6 for word in words) else FONT_BIG
     step = 20 if fnt == FONT_MED else 26

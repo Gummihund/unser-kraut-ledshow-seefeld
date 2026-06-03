@@ -20,7 +20,7 @@ const scenes = [
   { id: "pflege", name: "Pflege Creme", words: ["PFLEGE", "CREME"], accent: "#89d7ff", product: "cream", assets: ["../assets/raw/pflege-creme-01.jpg"] },
   { id: "tiere", name: "Fuer Tiere", words: ["FUER", "TIERE"], accent: "#d4ff81", product: "paw", assets: ["../assets/raw/tier-cbd-oel-5prozent-01.jpg"] },
   { id: "gift", name: "Geschenk Idee", words: ["SEEFELD", "GESCHENK"], accent: "#ffb55c", product: "gift", assets: ["../assets/raw/hanf-snack-schokolade-01.jpg", "../assets/raw/geschenk-emailletasse-01.jpg"] },
-  { id: "cta", name: "Beratung", words: ["KOMM", "REIN", "BERATUNG"], accent: LED_GREEN, product: "leaf", assets: ["../assets/raw/hanfblatt-01.png"] },
+  { id: "cta", name: "Beratung", words: ["KOMM REIN", "WIR BERATEN", "DICH GERNE"], accent: LED_GREEN, product: "leaf", assets: ["../assets/raw/hanfblatt-01.png"] },
 ];
 
 const totalFrames = scenes.length * sceneFrames;
@@ -138,6 +138,23 @@ function drawScanlines(t) {
 
 function drawWords(scene, ease) {
   const x = 10;
+  if (scene.id === "cta") {
+    const lines = ["KOMM REIN", "WIR BERATEN", "DICH GERNE"];
+    ctx.textBaseline = "top";
+    ctx.font = "900 14px Arial";
+    ctx.lineWidth = 3;
+    lines.forEach((word, i) => {
+      const yy = 25 + i * 18;
+      ctx.strokeStyle = "rgba(0,0,0,0.88)";
+      ctx.fillStyle = i === 2 ? scene.accent : "#f6ffe9";
+      ctx.strokeText(word, x, yy);
+      ctx.fillText(word, x, yy);
+    });
+    ctx.fillStyle = scene.accent;
+    ctx.fillRect(10, 86, 48 + ease * 18, 3);
+    return;
+  }
+
   const y = scene.words.length === 3 ? 32 : 42;
   const fontSize = scene.words.some((word) => word.length > 6) ? 17 : 23;
 
@@ -191,8 +208,10 @@ function drawProduct(scene, ease, t) {
     const x = centerX - dw / 2;
     const y = scene.id === "brand" || scene.id === "cta" ? 64 - dh / 2 - (1 - ease) * 18 : 30 - (1 - ease) * 12;
     ctx.save();
-    ctx.shadowColor = scene.accent;
-    ctx.shadowBlur = 13;
+    ctx.shadowColor = scene.id === "pflege" ? "rgba(0,0,0,0.34)" : scene.accent;
+    ctx.shadowBlur = scene.id === "pflege" ? 5 : 13;
+    ctx.shadowOffsetX = scene.id === "pflege" ? 2 : 0;
+    ctx.shadowOffsetY = scene.id === "pflege" ? 4 : 0;
     if (scene.id === "brand" || scene.id === "cta") {
       drawTintedImage(img, x, y, dw, dh, scene.accent);
     } else {
