@@ -8,18 +8,19 @@ const FPS = 30;
 const sceneSeconds = 3.2;
 const sceneFrames = Math.round(sceneSeconds * FPS);
 const BRAND_GREEN = "#43913d";
+const LED_GREEN = "#72ff32";
 
 const scenes = [
-  { id: "brand", name: "Hanfblatt", words: ["UNSER", "KRAUT", "SEEFELD"], accent: BRAND_GREEN, product: "leaf", assets: ["../assets/raw/hanfblatt-01.png"] },
+  { id: "brand", name: "Hanfblatt", words: ["UNSER", "KRAUT", "SEEFELD"], accent: LED_GREEN, product: "leaf", assets: ["../assets/raw/hanfblatt-01.png"] },
   { id: "cbd", name: "CBD Oele", words: ["CBD", "OELE"], accent: BRAND_GREEN, product: "bottle", assets: ["../assets/raw/cbd-oel-10prozent-premium.jpg", "../assets/raw/cbd-oel-01.png", "../assets/raw/cbd-oel-01.jpg"] },
   { id: "tee", name: "Hanf Tee", words: ["HANF", "TEE"], accent: "#8ecf55", product: "pouch", assets: ["../assets/raw/hanftee-blaetter-01.jpg", "../assets/raw/hanftee-01.jpg", "../assets/raw/hanftee-kraeuter-01.jpg"] },
-  { id: "honig", name: "Honig Tirol", words: ["HONIG", "TIROL"], accent: "#ffc247", product: "jar", assets: ["../assets/raw/cannabee-honig-01.png", "../assets/raw/cannabee-honig-01.jpg"] },
+  { id: "honig", name: "Honig Tirol", words: ["HONIG", "TIROL"], accent: "#ffc247", product: "jar", assets: ["../assets/raw/cannabee-honig-02.jpg", "../assets/raw/cannabee-honig-01.png", "../assets/raw/cannabee-honig-01.jpg"] },
   { id: "vapes", name: "Vapes 18+", words: ["VAPES", "18+"], accent: "#ff4f91", product: "vape", assets: ["../assets/raw/vape-mesh-himbeere.png", "../assets/raw/vape-01.png", "../assets/raw/vape-01.jpg"] },
-  { id: "snacks", name: "Bio Snacks", words: ["BIO", "SNACKS"], accent: "#f3ff8c", product: "seeds", assets: ["../assets/raw/hanfsamen-01.png", "../assets/raw/hanfsamen-01.jpg"] },
-  { id: "pflege", name: "Pflege Creme", words: ["PFLEGE", "CREME"], accent: "#89d7ff", product: "cream", assets: ["../assets/raw/pflege-creme-01.png", "../assets/raw/pflege-creme-01.jpg"] },
-  { id: "tiere", name: "Fuer Tiere", words: ["FUER", "TIERE"], accent: "#d4ff81", product: "paw", assets: ["../assets/raw/tierprodukt-01.png", "../assets/raw/tierprodukt-01.jpg"] },
-  { id: "gift", name: "Geschenk Idee", words: ["GESCHENK", "IDEE"], accent: "#ffb55c", product: "gift" },
-  { id: "cta", name: "Beratung", words: ["KOMM", "REIN", "BERATUNG"], accent: BRAND_GREEN, product: "leaf", assets: ["../assets/raw/hanfblatt-01.png"] },
+  { id: "snacks", name: "Seefeld Snack", words: ["SEEFELD", "SNACK"], accent: "#f3ff8c", product: "seeds", assets: ["../assets/raw/seefeld-schokolade-3er-01.jpg", "../assets/raw/hanf-snack-schokolade-01.jpg"] },
+  { id: "pflege", name: "Pflege Creme", words: ["PFLEGE", "CREME"], accent: "#89d7ff", product: "cream", assets: ["../assets/raw/pflege-creme-01.jpg"] },
+  { id: "tiere", name: "Fuer Tiere", words: ["FUER", "TIERE"], accent: "#d4ff81", product: "paw", assets: ["../assets/raw/tier-cbd-oel-5prozent-01.jpg"] },
+  { id: "gift", name: "Geschenk Idee", words: ["SEEFELD", "GESCHENK"], accent: "#ffb55c", product: "gift", assets: ["../assets/raw/hanf-snack-schokolade-01.jpg", "../assets/raw/geschenk-emailletasse-01.jpg"] },
+  { id: "cta", name: "Beratung", words: ["KOMM", "REIN", "BERATUNG"], accent: LED_GREEN, product: "leaf", assets: ["../assets/raw/hanfblatt-01.png"] },
 ];
 
 const totalFrames = scenes.length * sceneFrames;
@@ -157,9 +158,12 @@ function drawWords(scene, ease) {
 }
 
 function drawCornerInfo(scene, t) {
-  ctx.font = "700 7px Arial";
-  ctx.fillStyle = scene.id === "cta" ? "#f6ffe9" : hexAlpha(scene.accent, 0.82);
-  ctx.fillText(scene.id === "cta" ? "WIR BERATEN GERN" : "UNSER-KRAUT.AT", 8, 115);
+  if (scene.id === "cta") {
+    roundRect(8, 111, 65, 14, 4, "#050805", scene.accent);
+    ctx.font = "900 8px Arial";
+    ctx.fillStyle = "#f6ffe9";
+    ctx.fillText("IM SHOP", 13, 113);
+  }
 
   if (scene.id === "vapes") {
     ctx.fillStyle = "#f6ffe9";
@@ -178,16 +182,21 @@ function drawCornerInfo(scene, t) {
 function drawProduct(scene, ease, t) {
   const img = imageCache.get(scene.id);
   if (img) {
-    const size = scene.id === "brand" || scene.id === "cta" ? 70 + ease * 5 : 78 + ease * 6;
-    const x = 118 + Math.sin(t * Math.PI * 2) * 2 - size / 2;
-    const y = 28 - (1 - ease) * 16;
+    const sizes = { brand: 88, cta: 70, honig: 94, snacks: 104, pflege: 92, tiere: 94, gift: 90 };
+    const size = (sizes[scene.id] || 82) + ease * 5;
+    const ratio = img.width && img.height ? img.width / img.height : 1;
+    const dw = ratio >= 1 ? size : size * ratio;
+    const dh = ratio >= 1 ? size / ratio : size;
+    const centerX = (scene.id === "cta" ? 146 : 132) + Math.sin(t * Math.PI * 2) * 2;
+    const x = centerX - dw / 2;
+    const y = scene.id === "brand" || scene.id === "cta" ? 64 - dh / 2 - (1 - ease) * 18 : 30 - (1 - ease) * 12;
     ctx.save();
     ctx.shadowColor = scene.accent;
     ctx.shadowBlur = 13;
-    if (scene.id === "honig") {
-      ctx.drawImage(img, img.width * 0.1, img.height * 0.06, img.width * 0.76, img.height * 0.48, x - 9, y - 6, size + 22, size);
+    if (scene.id === "brand" || scene.id === "cta") {
+      drawTintedImage(img, x, y, dw, dh, scene.accent);
     } else {
-      ctx.drawImage(img, x, y, size, size);
+      ctx.drawImage(img, x, y, dw, dh);
     }
     ctx.restore();
     return;
@@ -215,6 +224,18 @@ function drawProduct(scene, ease, t) {
   if (scene.product === "leaf") drawLeaf(scene.accent);
 
   ctx.restore();
+}
+
+function drawTintedImage(img, x, y, w, h, color) {
+  const off = document.createElement("canvas");
+  off.width = Math.max(1, Math.round(w));
+  off.height = Math.max(1, Math.round(h));
+  const offCtx = off.getContext("2d");
+  offCtx.drawImage(img, 0, 0, off.width, off.height);
+  offCtx.globalCompositeOperation = "source-in";
+  offCtx.fillStyle = color;
+  offCtx.fillRect(0, 0, off.width, off.height);
+  ctx.drawImage(off, x, y);
 }
 
 function drawBottle(accent) {

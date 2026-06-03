@@ -22,7 +22,7 @@ Diese Seiten enthalten passende Produktbilder fuer die LED-Szenen. Bitte Bilder 
 - Vapes: https://www.unser-kraut.at/vapes
 - CBD Koerperpflege: https://www.unser-kraut.at/cbd-koerperpflege
 - CBD Gesichtspflege: https://www.unser-kraut.at/cbd-gesichtspflege-antiaging
-- Tierprodukte: https://www.unser-kraut.at/cbd-oel-hund-katze-pferd
+- Tierprodukte: https://www.unser-kraut.at/cbd-fuer-tiere
 
 ## Zu sammelnde Produktbilder
 
@@ -117,6 +117,36 @@ Datei: assets/raw/vape-mesh-himbeere.png
 Quelle: https://static.wixstatic.com/media/76f9c9_7269afac671e4ad79f11e4e1b696514d~mv2.png/v1/fit/w_900,h_900,q_95/file.png
 Produktgruppe: Vapes
 Verwendung: Szene 5
+
+Datei: assets/raw/cannabee-honig-02.jpg
+Quelle: https://static.wixstatic.com/media/76f9c9_555e4834b2e2444fa3b2e84c5f4582f4~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg
+Produktgruppe: Cannabee / Honig
+Verwendung: Szene 4
+
+Datei: assets/raw/hanf-snack-schokolade-01.jpg
+Quelle: https://static.wixstatic.com/media/76f9c9_7cdb14b916364e9fb018d1fdc9875310~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg
+Produktgruppe: Bio Snacks / Geschenk
+Verwendung: Szene 9
+
+Datei: assets/raw/seefeld-schokolade-3er-01.jpg
+Quelle: https://static.wixstatic.com/media/76f9c9_c04c921bda7c494a89be6c048fe9677e~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg
+Produktgruppe: Bio Snacks / Geschenk
+Verwendung: Szene 6
+
+Datei: assets/raw/pflege-creme-01.jpg
+Quelle: https://static.wixstatic.com/media/76f9c9_18c4fa68a5fa46acaee22dc4d413fd76~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg
+Produktgruppe: CBD Pflege
+Verwendung: Szene 7
+
+Datei: assets/raw/tier-cbd-oel-5prozent-01.jpg
+Quelle: https://static.wixstatic.com/media/76f9c9_3d6641cc98e64d788fa6acd8d4a346b5~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg
+Produktgruppe: CBD fuer Tiere
+Verwendung: Szene 8
+
+Datei: assets/raw/geschenk-emailletasse-01.jpg
+Quelle: https://static.wixstatic.com/media/76f9c9_27d004bcdf564223a3b8f29a69d9f6cf~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg
+Produktgruppe: Geschenkartikel
+Verwendung: alternative Geschenk-Szene
 ```
 
 ## Hinweis zur Website-Erreichbarkeit

@@ -19,18 +19,19 @@ FPS = 30
 SCENE_SECONDS = 3.2
 SCENE_FRAMES = round(FPS * SCENE_SECONDS)
 BRAND_GREEN = "#43913d"
+LED_GREEN = "#72ff32"
 
 SCENES = [
-    ("hanfblatt", ["UNSER", "KRAUT", "SEEFELD"], BRAND_GREEN, "leaf", ["hanfblatt-01.png"]),
+    ("hanfblatt", ["UNSER", "KRAUT", "SEEFELD"], LED_GREEN, "leaf", ["hanfblatt-01.png"]),
     ("cbd", ["CBD", "OELE"], BRAND_GREEN, "bottle", ["cbd-oel-10prozent-premium.jpg", "cbd-oel-01.png", "cbd-oel-01.jpg"]),
     ("tee", ["HANF", "TEE"], "#8ecf55", "pouch", ["hanftee-blaetter-01.jpg", "hanftee-01.jpg", "hanftee-kraeuter-01.jpg"]),
-    ("honig", ["HONIG", "TIROL"], "#ffc247", "jar", ["cannabee-honig-01.png", "cannabee-honig-01.jpg"]),
+    ("honig", ["HONIG", "TIROL"], "#ffc247", "jar", ["cannabee-honig-02.jpg", "cannabee-honig-01.png", "cannabee-honig-01.jpg"]),
     ("vapes", ["VAPES", "18+"], "#ff4f91", "vape", ["vape-mesh-himbeere.png", "vape-01.png", "vape-01.jpg"]),
-    ("snacks", ["BIO", "SNACKS"], "#f3ff8c", "seeds", ["hanfsamen-01.png", "hanfsamen-01.jpg"]),
-    ("pflege", ["PFLEGE", "CREME"], "#89d7ff", "cream", ["pflege-creme-01.png", "pflege-creme-01.jpg"]),
-    ("tiere", ["FUER", "TIERE"], "#d4ff81", "paw", ["tierprodukt-01.png", "tierprodukt-01.jpg"]),
-    ("gift", ["GESCHENK", "IDEE"], "#ffb55c", "gift", []),
-    ("beratung", ["KOMM", "REIN", "BERATUNG"], BRAND_GREEN, "leaf", ["hanfblatt-01.png"]),
+    ("snacks", ["SEEFELD", "SNACK"], "#f3ff8c", "seeds", ["seefeld-schokolade-3er-01.jpg", "hanf-snack-schokolade-01.jpg"]),
+    ("pflege", ["PFLEGE", "CREME"], "#89d7ff", "cream", ["pflege-creme-01.jpg"]),
+    ("tiere", ["FUER", "TIERE"], "#d4ff81", "paw", ["tier-cbd-oel-5prozent-01.jpg"]),
+    ("gift", ["SEEFELD", "GESCHENK"], "#ffb55c", "gift", ["hanf-snack-schokolade-01.jpg", "geschenk-emailletasse-01.jpg"]),
+    ("beratung", ["KOMM", "REIN", "BERATUNG"], LED_GREEN, "leaf", ["hanfblatt-01.png"]),
 ]
 
 
@@ -63,11 +64,29 @@ def load_asset(candidates: list[str]) -> Image.Image | None:
         path = RAW / candidate
         if path.exists():
             img = Image.open(path).convert("RGBA")
-            if "cannabee-honig" in candidate:
-                w, h = img.size
-                img = img.crop((round(w * 0.10), round(h * 0.06), round(w * 0.86), round(h * 0.54)))
+            if "hanfblatt" in candidate:
+                return tint_leaf(img, LED_GREEN)
             return trim_white(img)
     return None
+
+
+def tint_leaf(img: Image.Image, color: str) -> Image.Image:
+    rgba = img.convert("RGBA")
+    tinted = Image.new("RGBA", rgba.size, (*hex_to_rgb(color), 0))
+    alpha = Image.new("L", rgba.size, 0)
+    src = rgba.load()
+    dst = alpha.load()
+    w, h = rgba.size
+    for y in range(h):
+        for x in range(w):
+            r, g, b, a = src[x, y]
+            if not a:
+                continue
+            darkness = 255 - min(255, (r + g + b) // 3)
+            dst[x, y] = max(0, min(255, round(a * darkness / 255)))
+    tinted.putalpha(alpha.filter(ImageFilter.GaussianBlur(0.25)))
+    bbox = tinted.getbbox()
+    return tinted.crop(bbox) if bbox else tinted
 
 
 def trim_white(img: Image.Image) -> Image.Image:
@@ -103,12 +122,18 @@ def draw_background(draw: ImageDraw.ImageDraw, img: Image.Image, accent: str, t:
 
 def draw_product(base: Image.Image, draw: ImageDraw.ImageDraw, scene_id: str, kind: str, accent: str, ease: float, t: float) -> None:
     asset = ASSETS.get(scene_id)
-    cx = 132 + math.sin(t * math.tau) * 3
+    cx = (146 if scene_id == "beratung" else 132) + math.sin(t * math.tau) * 3
     cy = 64 - (1 - ease) * 18
     if asset:
-        size = 74 if scene_id in {"hanfblatt", "beratung"} else 82
-        if scene_id == "honig":
-            size = 102
+        size = {
+            "hanfblatt": 88,
+            "beratung": 70,
+            "honig": 94,
+            "snacks": 104,
+            "pflege": 92,
+            "tiere": 94,
+            "gift": 90,
+        }.get(scene_id, 82)
         size = round(size + ease * 5)
         product = asset.copy()
         product.thumbnail((size, size), Image.Resampling.LANCZOS)
@@ -118,7 +143,10 @@ def draw_product(base: Image.Image, draw: ImageDraw.ImageDraw, scene_id: str, ki
         alpha = product.getchannel("A").filter(ImageFilter.GaussianBlur(5))
         shadow.putalpha(alpha)
         x = round(cx - product.width / 2)
-        y = round(28 - (1 - ease) * 12 if scene_id not in {"hanfblatt", "beratung"} else cy - product.height / 2)
+        if scene_id in {"hanfblatt", "beratung"}:
+            y = round(cy - product.height / 2)
+        else:
+            y = round(30 - (1 - ease) * 12)
         base.alpha_composite(shadow, (x + 2, y + 2))
         base.alpha_composite(product, (x, y))
         return
@@ -175,8 +203,9 @@ def draw_frame(scene_index: int, frame_in_scene: int) -> Image.Image:
     draw_background(draw, img, accent, t)
     draw_product(img, draw, scene_id, kind, accent, ease, t)
     draw_words(draw, words, accent, scene_id, ease)
-    bottom = "WIR BERATEN GERN" if scene_id == "beratung" else "UNSER-KRAUT.AT"
-    draw.text((8, 115), bottom, fill=accent if scene_id != "beratung" else "#f6ffe9", font=FONT_TINY)
+    if scene_id == "beratung":
+        draw.rounded_rectangle((8, 111, 73, 125), radius=4, fill=(5, 8, 5), outline=accent, width=1)
+        draw.text((13, 113), "IM SHOP", fill="#f6ffe9", font=FONT_SMALL)
     if scene_id == "vapes":
         draw.rectangle((159, 9, 183, 23), fill="#f6ffe9")
         draw.text((163, 11), "18+", fill="#111111", font=FONT_SMALL)
