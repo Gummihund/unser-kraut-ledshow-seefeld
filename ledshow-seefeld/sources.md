@@ -11,7 +11,12 @@
 Diese Seiten enthalten passende Produktbilder fuer die LED-Szenen. Bitte Bilder lokal speichern und mit den Dateinamen aus dem Asset-Plan in `assets/raw/` legen.
 
 - CBD Oele: https://www.unser-kraut.at/cbd-oel-kaufen
-- Hanftee: https://www.unser-kraut.at/hanftee-hanfbluetentee-hanffruechtetee
+- Hanftee: https://www.unser-kraut.at/hanftee
+- Hanfblaettertee: https://www.unser-kraut.at/onlineshop/hanfblättertee-austria-bio-garantie-lose
+- Hanfblaetter und Fruechte Tee: https://www.unser-kraut.at/onlineshop/hanfblaetter-und-fruechte-tee-austria-bio-qualitaet
+- Hanf-Kraeutertee: https://www.unser-kraut.at/onlineshop/hanf-kräutertee-aus-österreich
+- CBD Oel 10 Prozent: https://www.unser-kraut.at/onlineshop/cbd-oel-10prozent-vollspektrum-premium-guenstig-kaufen-oesterreich
+- Vape Mesh Himbeere: https://www.unser-kraut.at/onlineshop/vapes-mesh-flash-himbeere-led-vape-ohne-nikotin-thc
 - Hanfblueten / Aroma-Hanf: https://www.unser-kraut.at/hanfblueten
 - Cannabee / Honig: https://www.unser-kraut.at/onlineshop
 - Vapes: https://www.unser-kraut.at/vapes
@@ -83,6 +88,35 @@ Datei: assets/raw/cbd-oel-01.png
 Quelle: https://www.unser-kraut.at/...
 Produktgruppe: CBD Oele
 Verwendung: Szene 2
+```
+
+Aktuell eingebundene Einzelbilder:
+
+```text
+Datei: assets/raw/cbd-oel-10prozent-premium.jpg
+Quelle: https://static.wixstatic.com/media/76f9c9_a123ab60b3cd47fcbeb7d0b2a7693902~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg
+Produktgruppe: CBD Oele
+Verwendung: Szene 2
+
+Datei: assets/raw/hanftee-blaetter-01.jpg
+Quelle: https://static.wixstatic.com/media/76f9c9_5f0fe1b983344697bfc34e6141a26f0b~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg
+Produktgruppe: Hanftee
+Verwendung: Szene 3
+
+Datei: assets/raw/hanftee-01.jpg
+Quelle: https://static.wixstatic.com/media/76f9c9_c5cc7045b132430ea7826517c2f407a3~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg
+Produktgruppe: Hanftee
+Verwendung: alternative Tee-Packung
+
+Datei: assets/raw/hanftee-kraeuter-01.jpg
+Quelle: https://static.wixstatic.com/media/76f9c9_c382df17726e46e09050e99a24de6156~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg
+Produktgruppe: Hanftee
+Verwendung: alternative Tee-Packung
+
+Datei: assets/raw/vape-mesh-himbeere.png
+Quelle: https://static.wixstatic.com/media/76f9c9_7269afac671e4ad79f11e4e1b696514d~mv2.png/v1/fit/w_900,h_900,q_95/file.png
+Produktgruppe: Vapes
+Verwendung: Szene 5
 ```
 
 ## Hinweis zur Website-Erreichbarkeit

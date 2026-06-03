@@ -11,10 +11,10 @@ const BRAND_GREEN = "#43913d";
 
 const scenes = [
   { id: "brand", name: "Hanfblatt", words: ["UNSER", "KRAUT", "SEEFELD"], accent: BRAND_GREEN, product: "leaf", assets: ["../assets/raw/hanfblatt-01.png"] },
-  { id: "cbd", name: "CBD Oele", words: ["CBD", "OELE"], accent: BRAND_GREEN, product: "bottle", assets: ["../assets/raw/cbd-oel-01.png", "../assets/raw/cbd-oel-01.jpg"] },
-  { id: "tee", name: "Tee Blueten", words: ["TEE", "BLUETEN"], accent: "#8ecf55", product: "pouch", assets: ["../assets/raw/hanftee-01.png", "../assets/raw/hanftee-01.jpg"] },
+  { id: "cbd", name: "CBD Oele", words: ["CBD", "OELE"], accent: BRAND_GREEN, product: "bottle", assets: ["../assets/raw/cbd-oel-10prozent-premium.jpg", "../assets/raw/cbd-oel-01.png", "../assets/raw/cbd-oel-01.jpg"] },
+  { id: "tee", name: "Hanf Tee", words: ["HANF", "TEE"], accent: "#8ecf55", product: "pouch", assets: ["../assets/raw/hanftee-blaetter-01.jpg", "../assets/raw/hanftee-01.jpg", "../assets/raw/hanftee-kraeuter-01.jpg"] },
   { id: "honig", name: "Honig Tirol", words: ["HONIG", "TIROL"], accent: "#ffc247", product: "jar", assets: ["../assets/raw/cannabee-honig-01.png", "../assets/raw/cannabee-honig-01.jpg"] },
-  { id: "vapes", name: "Vapes 18+", words: ["VAPES", "18+"], accent: "#ff4f91", product: "vape", assets: ["../assets/raw/vape-01.png", "../assets/raw/vape-01.jpg"] },
+  { id: "vapes", name: "Vapes 18+", words: ["VAPES", "18+"], accent: "#ff4f91", product: "vape", assets: ["../assets/raw/vape-mesh-himbeere.png", "../assets/raw/vape-01.png", "../assets/raw/vape-01.jpg"] },
   { id: "snacks", name: "Bio Snacks", words: ["BIO", "SNACKS"], accent: "#f3ff8c", product: "seeds", assets: ["../assets/raw/hanfsamen-01.png", "../assets/raw/hanfsamen-01.jpg"] },
   { id: "pflege", name: "Pflege Creme", words: ["PFLEGE", "CREME"], accent: "#89d7ff", product: "cream", assets: ["../assets/raw/pflege-creme-01.png", "../assets/raw/pflege-creme-01.jpg"] },
   { id: "tiere", name: "Fuer Tiere", words: ["FUER", "TIERE"], accent: "#d4ff81", product: "paw", assets: ["../assets/raw/tierprodukt-01.png", "../assets/raw/tierprodukt-01.jpg"] },
@@ -184,7 +184,11 @@ function drawProduct(scene, ease, t) {
     ctx.save();
     ctx.shadowColor = scene.accent;
     ctx.shadowBlur = 13;
-    ctx.drawImage(img, x, y, size, size);
+    if (scene.id === "honig") {
+      ctx.drawImage(img, img.width * 0.1, img.height * 0.06, img.width * 0.76, img.height * 0.48, x - 9, y - 6, size + 22, size);
+    } else {
+      ctx.drawImage(img, x, y, size, size);
+    }
     ctx.restore();
     return;
   }

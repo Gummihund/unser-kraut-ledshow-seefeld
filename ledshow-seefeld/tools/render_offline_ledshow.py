@@ -22,10 +22,10 @@ BRAND_GREEN = "#43913d"
 
 SCENES = [
     ("hanfblatt", ["UNSER", "KRAUT", "SEEFELD"], BRAND_GREEN, "leaf", ["hanfblatt-01.png"]),
-    ("cbd", ["CBD", "OELE"], BRAND_GREEN, "bottle", ["cbd-oel-01.png", "cbd-oel-01.jpg"]),
-    ("tee", ["TEE", "BLUETEN"], "#8ecf55", "pouch", ["hanftee-01.png", "hanftee-01.jpg"]),
+    ("cbd", ["CBD", "OELE"], BRAND_GREEN, "bottle", ["cbd-oel-10prozent-premium.jpg", "cbd-oel-01.png", "cbd-oel-01.jpg"]),
+    ("tee", ["HANF", "TEE"], "#8ecf55", "pouch", ["hanftee-blaetter-01.jpg", "hanftee-01.jpg", "hanftee-kraeuter-01.jpg"]),
     ("honig", ["HONIG", "TIROL"], "#ffc247", "jar", ["cannabee-honig-01.png", "cannabee-honig-01.jpg"]),
-    ("vapes", ["VAPES", "18+"], "#ff4f91", "vape", ["vape-01.png", "vape-01.jpg"]),
+    ("vapes", ["VAPES", "18+"], "#ff4f91", "vape", ["vape-mesh-himbeere.png", "vape-01.png", "vape-01.jpg"]),
     ("snacks", ["BIO", "SNACKS"], "#f3ff8c", "seeds", ["hanfsamen-01.png", "hanfsamen-01.jpg"]),
     ("pflege", ["PFLEGE", "CREME"], "#89d7ff", "cream", ["pflege-creme-01.png", "pflege-creme-01.jpg"]),
     ("tiere", ["FUER", "TIERE"], "#d4ff81", "paw", ["tierprodukt-01.png", "tierprodukt-01.jpg"]),
@@ -63,6 +63,9 @@ def load_asset(candidates: list[str]) -> Image.Image | None:
         path = RAW / candidate
         if path.exists():
             img = Image.open(path).convert("RGBA")
+            if "cannabee-honig" in candidate:
+                w, h = img.size
+                img = img.crop((round(w * 0.10), round(h * 0.06), round(w * 0.86), round(h * 0.54)))
             return trim_white(img)
     return None
 
@@ -104,6 +107,8 @@ def draw_product(base: Image.Image, draw: ImageDraw.ImageDraw, scene_id: str, ki
     cy = 64 - (1 - ease) * 18
     if asset:
         size = 74 if scene_id in {"hanfblatt", "beratung"} else 82
+        if scene_id == "honig":
+            size = 102
         size = round(size + ease * 5)
         product = asset.copy()
         product.thumbnail((size, size), Image.Resampling.LANCZOS)
