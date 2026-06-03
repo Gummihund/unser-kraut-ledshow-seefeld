@@ -67,8 +67,55 @@ def load_asset(candidates: list[str]) -> Image.Image | None:
             img = Image.open(path).convert("RGBA")
             if "hanfblatt" in candidate:
                 return tint_leaf(img, LED_GREEN)
+            if "pflege-creme" in candidate:
+                return prepare_care_asset(img)
             return trim_white(img)
     return None
+
+
+def prepare_care_asset(img: Image.Image) -> Image.Image:
+    rgba = img.convert("RGBA")
+    w, h = rgba.size
+    crop = rgba.crop((round(w * 0.12), round(h * 0.04), round(w * 0.86), round(h * 0.96)))
+    cw, ch = crop.size
+    out = Image.new("RGBA", (cw, ch), (0, 0, 0, 0))
+    src = crop.load()
+    dst = out.load()
+    box_limit = round(cw * 0.55)
+    for y in range(ch):
+        for x in range(box_limit):
+            r, g, b, a = src[x, y]
+            if a and not (r > 242 and g > 242 and b > 242):
+                dst[x, y] = (r, g, b, a)
+
+    draw = ImageDraw.Draw(out)
+    bottle_x = round(cw * 0.61)
+    bottle_y = round(ch * 0.10)
+    bottle_w = round(cw * 0.26)
+    bottle_h = round(ch * 0.82)
+    draw.rounded_rectangle(
+        (bottle_x, bottle_y, bottle_x + bottle_w, bottle_y + bottle_h),
+        radius=round(bottle_w * 0.18),
+        fill=(255, 255, 250, 255),
+        outline=(226, 242, 246, 220),
+        width=2,
+    )
+    draw.rounded_rectangle(
+        (
+            bottle_x + round(bottle_w * 0.14),
+            bottle_y + round(bottle_h * 0.06),
+            bottle_x + bottle_w - round(bottle_w * 0.14),
+            bottle_y + round(bottle_h * 0.22),
+        ),
+        radius=round(bottle_w * 0.10),
+        fill=(255, 255, 255, 255),
+        outline=(235, 238, 238, 210),
+        width=1,
+    )
+    label_y = bottle_y + round(bottle_h * 0.66)
+    draw.rectangle((bottle_x + 4, label_y, bottle_x + bottle_w - 4, label_y + 4), fill=(157, 47, 77, 255))
+    draw.rectangle((bottle_x + 8, label_y + 12, bottle_x + bottle_w - 8, label_y + 14), fill=(157, 47, 77, 220))
+    return out
 
 
 def tint_leaf(img: Image.Image, color: str) -> Image.Image:
@@ -140,20 +187,17 @@ def draw_product(base: Image.Image, draw: ImageDraw.ImageDraw, scene_id: str, ki
         product.thumbnail((size, size), Image.Resampling.LANCZOS)
         product = ImageEnhance.Contrast(product).enhance(1.14)
         product = product.filter(ImageFilter.SHARPEN)
-        shadow_color = (0, 0, 0) if scene_id == "pflege" else hex_to_rgb(accent)
-        shadow = Image.new("RGBA", product.size, (*shadow_color, 0))
-        blur = 3 if scene_id == "pflege" else 5
-        opacity = 0.34 if scene_id == "pflege" else 0.76
-        alpha = product.getchannel("A").filter(ImageFilter.GaussianBlur(blur))
-        alpha = alpha.point(lambda value: round(value * opacity))
-        shadow.putalpha(alpha)
         x = round(cx - product.width / 2)
         if scene_id in {"hanfblatt", "beratung"}:
             y = round(cy - product.height / 2)
         else:
             y = round(30 - (1 - ease) * 12)
-        offset = (2, 4) if scene_id == "pflege" else (2, 2)
-        base.alpha_composite(shadow, (x + offset[0], y + offset[1]))
+        if scene_id != "pflege":
+            shadow = Image.new("RGBA", product.size, (*hex_to_rgb(accent), 0))
+            alpha = product.getchannel("A").filter(ImageFilter.GaussianBlur(5))
+            alpha = alpha.point(lambda value: round(value * 0.76))
+            shadow.putalpha(alpha)
+            base.alpha_composite(shadow, (x + 2, y + 2))
         base.alpha_composite(product, (x, y))
         return
 

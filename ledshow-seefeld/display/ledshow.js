@@ -208,10 +208,13 @@ function drawProduct(scene, ease, t) {
     const x = centerX - dw / 2;
     const y = scene.id === "brand" || scene.id === "cta" ? 64 - dh / 2 - (1 - ease) * 18 : 30 - (1 - ease) * 12;
     ctx.save();
-    ctx.shadowColor = scene.id === "pflege" ? "rgba(0,0,0,0.34)" : scene.accent;
-    ctx.shadowBlur = scene.id === "pflege" ? 5 : 13;
-    ctx.shadowOffsetX = scene.id === "pflege" ? 2 : 0;
-    ctx.shadowOffsetY = scene.id === "pflege" ? 4 : 0;
+    if (scene.id === "pflege") {
+      drawCareProduct(x, y, dw, dh);
+      ctx.restore();
+      return;
+    }
+    ctx.shadowColor = scene.accent;
+    ctx.shadowBlur = 13;
     if (scene.id === "brand" || scene.id === "cta") {
       drawTintedImage(img, x, y, dw, dh, scene.accent);
     } else {
@@ -255,6 +258,27 @@ function drawTintedImage(img, x, y, w, h, color) {
   offCtx.fillStyle = color;
   offCtx.fillRect(0, 0, off.width, off.height);
   ctx.drawImage(off, x, y);
+}
+
+function drawCareProduct(x, y, w, h) {
+  ctx.save();
+  ctx.translate(x, y);
+  ctx.scale(w / 92, h / 92);
+  roundRect(10, 3, 36, 86, 4, "#8e2f4d", "#e5a8ba");
+  ctx.fillStyle = "#f6d6df";
+  ctx.font = "900 6px Arial";
+  ctx.fillText("CBDVITAL", 15, 14);
+  ctx.fillStyle = "rgba(255,255,255,0.30)";
+  for (let yy = 25; yy < 72; yy += 9) ctx.fillRect(15, yy, 24, 2);
+  ctx.fillStyle = "#111";
+  ctx.fillRect(15, 73, 12, 8);
+
+  roundRect(56, 10, 24, 80, 7, "#fffffb", "#e6f2f5");
+  roundRect(60, 15, 16, 18, 5, "#fff", "#edf2f2");
+  ctx.fillStyle = "#9d2f4d";
+  ctx.fillRect(61, 69, 14, 4);
+  ctx.fillRect(64, 81, 9, 2);
+  ctx.restore();
 }
 
 function drawBottle(accent) {
