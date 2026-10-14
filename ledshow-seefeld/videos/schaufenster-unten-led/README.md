@@ -9,7 +9,7 @@ Pflichtformat:
 - 30 fps.
 - H.264, idealerweise Baseline.
 - `yuv420p`.
-- Ohne Audio.
+- Ohne Audio. Audio muss aus sein.
 - Keine Rotation.
 
 Aktuell geprueft:

@@ -54,7 +54,7 @@ Pflichtformat fuer Videos:
 - 30 fps.
 - H.264, idealerweise Baseline.
 - Pixelformat `yuv420p`.
-- Keine Audiospur.
+- Keine Audiospur. Audio muss aus sein.
 - Keine Rotation.
 
 Versionierte Videos:
@@ -95,7 +95,7 @@ Noch zu erfassen:
 - Empfohlener Codec:
 - Empfohlene Bildrate:
 - Unterstuetzte maximale Bitrate:
-- Audiospur erlaubt: ja/nein.
+- Audiospur erlaubt: nein. Audio muss aus sein.
 - Uebertragung: USB, SD-Karte, WLAN, App, LAN, sonstiges.
 - Software/App:
 - Besonderheiten beim Export:
@@ -118,7 +118,7 @@ Vor Upload auf ein Display:
 - Ist der Codec kompatibel?
 - Ist das Pixelformat LED-/Controller-tauglich?
 - Gibt es keine ungewollte Rotation?
-- Ist keine Audiospur enthalten, wenn der Controller Video ohne Audio erwartet?
+- Ist keine Audiospur enthalten? Audio muss bei beiden Displays aus sein.
 - Ist der Loop kurz genug fuer Schaufenster-Betrachtung?
 - Sind Texte gross genug und nicht kleinteilig?
 - Ist der Kontrast fuer Tageslicht im Fenster stark genug?
