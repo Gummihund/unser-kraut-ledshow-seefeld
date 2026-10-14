@@ -17,6 +17,19 @@ Die fertige Offline-Datei fuer LEDshow Suite / LED Max / Onbon liegt hier:
 ledshow-seefeld\output\mp4\unser-kraut-seefeld-ledshow-192x128.mp4
 ```
 
+Ein aktuelles Register fuer die beiden Display-Standorte und die versionierten Videos liegt hier:
+
+```text
+ledshow-seefeld\display-register.md
+```
+
+Neue fertige Videos werden pro Geraet getrennt abgelegt:
+
+```text
+ledshow-seefeld\videos\schaufenster-unten-led\
+ledshow-seefeld\videos\spin-display-1-stock\
+```
+
 Diese MP4 ist die Datei, die auf den LED-Controller uebertragen werden soll:
 
 - LED-Software starten.
