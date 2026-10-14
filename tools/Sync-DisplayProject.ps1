@@ -1,10 +1,11 @@
 [CmdletBinding()]
 param(
     [ValidateSet('Sync','Publish')][string]$Mode = 'Sync',
-    [string]$LocalRoot = (Split-Path -Parent $PSScriptRoot),
+    [string]$LocalRoot = '',
     [string]$SharedRoot = '\\nas-christoph\Business\Codex-Projekte\unser-kraut-ledshow-seefeld'
 )
 $ErrorActionPreference = 'Stop'
+if (!$LocalRoot) { $LocalRoot = Split-Path -Parent $PSScriptRoot }
 $LocalRoot = [IO.Path]::GetFullPath($LocalRoot).TrimEnd('\')
 $SharedRoot = [IO.Path]::GetFullPath($SharedRoot).TrimEnd('\')
 if ($LocalRoot -eq $SharedRoot) { throw 'Use a local Git clone; the NAS copy is for reading.' }
