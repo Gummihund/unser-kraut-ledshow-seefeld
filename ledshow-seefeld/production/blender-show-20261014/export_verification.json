@@ -1,0 +1,32 @@
+[
+  {
+    "file": "UNSER_KRAUT_3D_BLENDER_20261014_VORSCHAU_768x512.mp4",
+    "dimensions": "768x512",
+    "fps": 30,
+    "frames": 900,
+    "duration_seconds": 30,
+    "audio": false,
+    "size_bytes": 5703930,
+    "decode": "passed"
+  },
+  {
+    "file": "UNSER_KRAUT_3D_BLENDER_20261014_192x128.mp4",
+    "dimensions": "192x128",
+    "fps": 30,
+    "frames": 900,
+    "duration_seconds": 30,
+    "audio": false,
+    "size_bytes": 2109696,
+    "decode": "passed"
+  },
+  {
+    "file": "UNSER_KRAUT_3D_BLENDER_20261014_192x128_KOMPATIBEL.avi",
+    "dimensions": "192x128",
+    "fps": 30,
+    "frames": 900,
+    "duration_seconds": 30,
+    "audio": false,
+    "size_bytes": 3002802,
+    "decode": "passed"
+  }
+]

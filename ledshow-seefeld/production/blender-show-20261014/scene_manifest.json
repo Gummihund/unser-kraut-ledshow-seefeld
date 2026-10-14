@@ -1,0 +1,18 @@
+{
+  "blender": "4.5.14 LTS",
+  "fps": 30,
+  "frames": 900,
+  "duration_seconds": 30.0,
+  "master_resolution": [
+    768,
+    512
+  ],
+  "scenes": [
+    "01_EMERALD_REVEAL",
+    "02_OIL_CONSTELLATION",
+    "03_BOTANICAL_TEA",
+    "04_GOLD_CHOCOLATE",
+    "05_BRAND_PORTAL"
+  ],
+  "model_note": "Artistic packaging reconstructions from original packshots. Original front label textures, plain unseen reverse."
+}

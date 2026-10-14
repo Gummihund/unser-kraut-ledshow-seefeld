@@ -1,5 +1,7 @@
 # unser-kraut-ledshow-seefeld
 
+Neue Blender-3D-Show vom 14.10.2026: [LED-MP4, 192 × 128, 30 Sekunden](ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_3D_BLENDER_20261014_192x128.mp4). [Blender-Projekt, Vorschau und Anleitung](ledshow-seefeld/production/blender-show-20261014/README.md).
+
 Fertige LEDshow fuer den Unser Kraut Schaufenster-LED-Monitor in Seefeld.
 
 Seit 14.10.2026 gemeinsame NAS-Kopie fuer Geschaeft und Daheim:

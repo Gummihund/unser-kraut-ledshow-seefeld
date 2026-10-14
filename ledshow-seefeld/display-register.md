@@ -29,6 +29,16 @@ Hinweis: Die Laenge von 3:28 ist technisch nicht falsch, aber fuer ein kleines L
 
 ## Geraet 1: LED unten im Schaufenster
 
+Neue Blender-3D-Show vom 14.10.2026:
+
+```text
+ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_3D_BLENDER_20261014_192x128.mp4
+```
+
+30 Sekunden, 900 Bilder, 192 × 128 Pixel, 30 fps, H.264 Constrained Baseline, yuv420p, ohne Ton und Rotation. Vollständige Dateiprüfung in `ledshow-seefeld/production/blender-show-20261014/export_verification.json`. Wiedergabe am echten LED-Controller vor Ort noch offen.
+
+Bearbeitbares Blender-Projekt: `ledshow-seefeld/production/blender-show-20261014/UNSER_KRAUT_3D.blend`. PC-Vorschau und AVI-Alternative liegen im selben Videoordner wie die LED-MP4. Die bisherige Show bleibt erhalten.
+
 Status: bekannte Geraetedaten vorhanden.
 
 Standort:
