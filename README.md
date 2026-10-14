@@ -2,9 +2,13 @@
 
 Fertige LEDshow fuer den Unser Kraut Schaufenster-LED-Monitor in Seefeld.
 
+Seit 14.10.2026 gemeinsame NAS-Kopie fuer Geschaeft und Daheim:
+`\\nas-christoph\Business\Codex-Projekte\unser-kraut-ledshow-seefeld`.
+Sie enthaelt Projektdateien und fertige Videos. [PC-uebergreifender Ablauf, NAS-Abgleich und Codex Cloud](PC-UEBERGREIFEND.md).
+
 ## Download auf einem zweiten PC
 
-Voraussetzung: Der PC braucht Zugriff auf das private GitHub-Repo `Gummihund/unser-kraut-ledshow-seefeld`.
+Voraussetzung: Git und Zugriff auf `Gummihund/unser-kraut-ledshow-seefeld` (am 14.10.2026 als oeffentlich geprueft). Zum Pushen ist die eigene GitHub-Anmeldung erforderlich.
 
 ```powershell
 git clone https://github.com/Gummihund/unser-kraut-ledshow-seefeld.git
