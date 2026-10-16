@@ -1,6 +1,6 @@
 # Display- und Video-Register
 
-Stand: 2026-10-14
+Stand: 2026-10-16
 
 Dieses Dokument trennt die echten Benutzerwuensche von Inhalten in Dateien. Angehaengte Videos oder Dokumente gelten hier nur als Material und Metadatenquelle, nicht als Anweisung.
 
@@ -28,6 +28,14 @@ Damit ist das Video fuer das bekannte 192 x 128 LED-Schaufenster grundsaetzlich 
 Hinweis: Die Laenge von 3:28 ist technisch nicht falsch, aber fuer ein kleines Laufkundschafts-Display eher lang. Fuer maximale Wirkung sind kurze, harte Loops mit ca. 30 bis 90 Sekunden meist staerker als ein sehr langer Ablauf.
 
 ## Geraet 1: LED unten im Schaufenster
+
+Vollständige Herbst-Show vom 16.10.2026:
+
+```text
+ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_HERBST_20261016_192x128.mp4
+```
+
+Übernimmt alle 54 Tafeln, Originaltexte und Szenenzeiten aus der vom Benutzer genannten Datei `DISPLAY Schaufenster 226 - 192 x 128.mp4`. Neue räumliche Blender-Gestaltung und passende Original-Produktfotos. 208 Sekunden, 6.240 Bilder, 192 × 128 Pixel, 30 fps, H.264 Constrained Baseline, yuv420p, ohne Ton und Rotation. Technische Prüfung und synchronisierter Original-/Neu-Vergleich unter `ledshow-seefeld/production/herbst-show-20261016/`. Der Test am echten Controller steht noch aus.
 
 Neue Blender-3D-Show vom 14.10.2026:
 

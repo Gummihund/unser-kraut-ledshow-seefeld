@@ -1,0 +1,909 @@
+{
+  "title": "DISPLAY Schaufenster 226 – Herbst 2026",
+  "date": "2026-10-16",
+  "fps": 30,
+  "width": 192,
+  "height": 128,
+  "total_frames": 6240,
+  "seconds": 208,
+  "source_filename": "DISPLAY Schaufenster 226 - 192 x 128.mp4",
+  "source_sha256": "b542f489d8a42242aa08bb7905f28e879705fd3ab2a93a91835f1b3fc790bed9",
+  "copy_policy": "Original visible copy retained, including spelling and assertions. Only wrapping and design change. Assertions are supplied advertising copy, not independent verification.",
+  "cards": [
+    {
+      "id": 1,
+      "lines": [
+        "UNSER KRAUT",
+        "DEIN FACHGESCHÄFT"
+      ],
+      "assets": [
+        "logo"
+      ],
+      "theme": "brand",
+      "first_frame": 1,
+      "last_frame": 120,
+      "frames": 120,
+      "seconds": 4.0,
+      "reference": "reference/card_01.png"
+    },
+    {
+      "id": 2,
+      "lines": [
+        "VERTRAUEN",
+        "DURCH",
+        "KOMPETENZ."
+      ],
+      "assets": [],
+      "theme": "brand",
+      "first_frame": 121,
+      "last_frame": 225,
+      "frames": 105,
+      "seconds": 3.5,
+      "reference": "reference/card_02.png"
+    },
+    {
+      "id": 3,
+      "lines": [
+        "5,0 VON 5 STERNEN",
+        "GOOGLE",
+        "TRUSTED SHOPS",
+        "HEROLD"
+      ],
+      "assets": [
+        "stars"
+      ],
+      "theme": "gold",
+      "first_frame": 226,
+      "last_frame": 360,
+      "frames": 135,
+      "seconds": 4.5,
+      "reference": "reference/card_03.png"
+    },
+    {
+      "id": 4,
+      "lines": [
+        "WENN DIR",
+        "ALLES",
+        "ZUVIEL WIRD",
+        "NATURKRAFT",
+        "CBD ÖL"
+      ],
+      "assets": [
+        "cbd10"
+      ],
+      "theme": "oil",
+      "first_frame": 361,
+      "last_frame": 480,
+      "frames": 120,
+      "seconds": 4.0,
+      "reference": "reference/card_04.png"
+    },
+    {
+      "id": 5,
+      "lines": [
+        "MACHT NICHT",
+        "BERAUSCHT",
+        "LEGAL IN DER EU"
+      ],
+      "assets": [],
+      "theme": "oil",
+      "first_frame": 481,
+      "last_frame": 570,
+      "frames": 90,
+      "seconds": 3.0,
+      "reference": "reference/card_05.png"
+    },
+    {
+      "id": 6,
+      "lines": [
+        "HOL DIR",
+        "DEIN PASSENDES"
+      ],
+      "assets": [
+        "cbd5",
+        "cbd20",
+        "cbd40",
+        "nacht",
+        "entlastung",
+        "cbd10"
+      ],
+      "theme": "oil",
+      "first_frame": 571,
+      "last_frame": 735,
+      "frames": 165,
+      "seconds": 5.5,
+      "reference": "reference/card_06.png"
+    },
+    {
+      "id": 7,
+      "lines": [
+        "NEU BEI",
+        "HANF & CBD?",
+        "WIR ERKLÄREN",
+        "ES DIR GERNE."
+      ],
+      "assets": [
+        "leaf"
+      ],
+      "theme": "brand",
+      "first_frame": 736,
+      "last_frame": 855,
+      "frames": 120,
+      "seconds": 4.0,
+      "reference": "reference/card_07.png"
+    },
+    {
+      "id": 8,
+      "lines": [
+        "HAUTPFLEGE",
+        "FÜR HÖHERE",
+        "ANSPRÜCHE",
+        "GESUCHT?"
+      ],
+      "assets": [
+        "pflege"
+      ],
+      "theme": "care",
+      "first_frame": 856,
+      "last_frame": 1005,
+      "frames": 150,
+      "seconds": 5.0,
+      "reference": "reference/card_08.png"
+    },
+    {
+      "id": 9,
+      "lines": [
+        "ENTDECKE UNSER",
+        "großes Sortiment",
+        "an Bio",
+        "GESICHTS- &",
+        "KÖRPERPFLEGE"
+      ],
+      "assets": [],
+      "theme": "care",
+      "first_frame": 1006,
+      "last_frame": 1125,
+      "frames": 120,
+      "seconds": 4.0,
+      "reference": "reference/card_09.png"
+    },
+    {
+      "id": 10,
+      "lines": [
+        "ZERTIFIZIERTE",
+        "BIO - ORGANIC",
+        "KOSMETIK",
+        "MIT CBD"
+      ],
+      "assets": [
+        "organic"
+      ],
+      "theme": "care",
+      "first_frame": 1126,
+      "last_frame": 1275,
+      "frames": 150,
+      "seconds": 5.0,
+      "reference": "reference/card_10.png"
+    },
+    {
+      "id": 11,
+      "lines": [
+        "Spezial PFLEGE",
+        "TROCKENE",
+        "HAUT"
+      ],
+      "assets": [
+        "trocken"
+      ],
+      "theme": "care",
+      "first_frame": 1276,
+      "last_frame": 1395,
+      "frames": 120,
+      "seconds": 4.0,
+      "reference": "reference/card_11.png"
+    },
+    {
+      "id": 12,
+      "lines": [
+        "ERSTE HILFE",
+        "FÜR DEINE",
+        "HAUT"
+      ],
+      "assets": [
+        "akut"
+      ],
+      "theme": "care",
+      "first_frame": 1396,
+      "last_frame": 1515,
+      "frames": 120,
+      "seconds": 4.0,
+      "reference": "reference/card_12.png"
+    },
+    {
+      "id": 13,
+      "lines": [
+        "Großes Sortiment",
+        "für",
+        "HUND",
+        "KATZE & PFERD"
+      ],
+      "assets": [],
+      "theme": "pets",
+      "first_frame": 1516,
+      "last_frame": 1605,
+      "frames": 90,
+      "seconds": 3.0,
+      "reference": "reference/card_13.png"
+    },
+    {
+      "id": 14,
+      "lines": [
+        "CBD ÖL",
+        "Tropfen"
+      ],
+      "assets": [
+        "tier5",
+        "tier10"
+      ],
+      "theme": "pets",
+      "first_frame": 1606,
+      "last_frame": 1725,
+      "frames": 120,
+      "seconds": 4.0,
+      "reference": "reference/card_14.png"
+    },
+    {
+      "id": 15,
+      "lines": [
+        "ANTISTRESS",
+        "GELENKE",
+        "VERDAUUNG"
+      ],
+      "assets": [
+        "pet_snacks_original"
+      ],
+      "theme": "pets",
+      "first_frame": 1726,
+      "last_frame": 1875,
+      "frames": 150,
+      "seconds": 5.0,
+      "reference": "reference/card_15.png"
+    },
+    {
+      "id": 16,
+      "lines": [
+        "TIERPFLEGE"
+      ],
+      "assets": [
+        "spray",
+        "pfoten",
+        "pet_care_original"
+      ],
+      "theme": "pets",
+      "first_frame": 1876,
+      "last_frame": 2025,
+      "frames": 150,
+      "seconds": 5.0,
+      "reference": "reference/card_16.png"
+    },
+    {
+      "id": 17,
+      "lines": [
+        "REINE NATUR",
+        "FÜR DEINE",
+        "GESUNDE",
+        "KÜCHE"
+      ],
+      "assets": [],
+      "theme": "food",
+      "first_frame": 2026,
+      "last_frame": 2115,
+      "frames": 90,
+      "seconds": 3.0,
+      "reference": "reference/card_17.png"
+    },
+    {
+      "id": 18,
+      "lines": [
+        "OMEGA 3",
+        "Quelle"
+      ],
+      "assets": [
+        "samen"
+      ],
+      "theme": "food",
+      "first_frame": 2116,
+      "last_frame": 2235,
+      "frames": 120,
+      "seconds": 4.0,
+      "reference": "reference/card_18.png"
+    },
+    {
+      "id": 19,
+      "lines": [
+        "OMEGA 3",
+        "Quelle"
+      ],
+      "assets": [
+        "speiseoel"
+      ],
+      "theme": "food",
+      "first_frame": 2236,
+      "last_frame": 2325,
+      "frames": 90,
+      "seconds": 3.0,
+      "reference": "reference/card_19.png"
+    },
+    {
+      "id": 20,
+      "lines": [
+        "BIO",
+        "Schoko",
+        "Creme"
+      ],
+      "assets": [
+        "nougat"
+      ],
+      "theme": "gold",
+      "first_frame": 2326,
+      "last_frame": 2475,
+      "frames": 150,
+      "seconds": 5.0,
+      "reference": "reference/card_20.png"
+    },
+    {
+      "id": 21,
+      "lines": [
+        "BIO AUS",
+        "ÖSTERREICH"
+      ],
+      "assets": [
+        "bio_badges"
+      ],
+      "theme": "food",
+      "first_frame": 2476,
+      "last_frame": 2565,
+      "frames": 90,
+      "seconds": 3.0,
+      "reference": "reference/card_21.png"
+    },
+    {
+      "id": 22,
+      "lines": [
+        "Für",
+        "SPORT - FIGUR",
+        "& ENERGIE"
+      ],
+      "assets": [],
+      "theme": "active",
+      "first_frame": 2566,
+      "last_frame": 2655,
+      "frames": 90,
+      "seconds": 3.0,
+      "reference": "reference/card_22.png"
+    },
+    {
+      "id": 23,
+      "lines": [
+        "VEGANE",
+        "PROTEINE",
+        "für die Figur"
+      ],
+      "assets": [
+        "protein"
+      ],
+      "theme": "active",
+      "first_frame": 2656,
+      "last_frame": 2745,
+      "frames": 90,
+      "seconds": 3.0,
+      "reference": "reference/card_23.png"
+    },
+    {
+      "id": 24,
+      "lines": [
+        "HANF",
+        "FATBURNER",
+        "mit Kräutern"
+      ],
+      "assets": [
+        "fatburner"
+      ],
+      "theme": "active",
+      "first_frame": 2746,
+      "last_frame": 2895,
+      "frames": 150,
+      "seconds": 5.0,
+      "reference": "reference/card_24.png"
+    },
+    {
+      "id": 25,
+      "lines": [
+        "WOHLBEFINDEN",
+        "FÜR",
+        "SIE & IHN"
+      ],
+      "assets": [],
+      "theme": "balance",
+      "first_frame": 2896,
+      "last_frame": 2985,
+      "frames": 90,
+      "seconds": 3.0,
+      "reference": "reference/card_25.png"
+    },
+    {
+      "id": 26,
+      "lines": [
+        "FÜR",
+        "DIE",
+        "FRAU"
+      ],
+      "assets": [
+        "frau"
+      ],
+      "theme": "balance",
+      "first_frame": 2986,
+      "last_frame": 3105,
+      "frames": 120,
+      "seconds": 4.0,
+      "reference": "reference/card_26.png"
+    },
+    {
+      "id": 27,
+      "lines": [
+        "FÜR",
+        "DEN MANN"
+      ],
+      "assets": [
+        "mann"
+      ],
+      "theme": "balance",
+      "first_frame": 3106,
+      "last_frame": 3225,
+      "frames": 120,
+      "seconds": 4.0,
+      "reference": "reference/card_27.png"
+    },
+    {
+      "id": 28,
+      "lines": [
+        "DEINE GELENKE",
+        "GEZIELT",
+        "UNTERSTÜTZEN"
+      ],
+      "assets": [
+        "gelenke"
+      ],
+      "theme": "active",
+      "first_frame": 3226,
+      "last_frame": 3345,
+      "frames": 120,
+      "seconds": 4.0,
+      "reference": "reference/card_28.png"
+    },
+    {
+      "id": 29,
+      "lines": [
+        "ANSTRENGENDEN",
+        "TAG",
+        "GEHABT?"
+      ],
+      "assets": [],
+      "theme": "relief",
+      "first_frame": 3346,
+      "last_frame": 3435,
+      "frames": 90,
+      "seconds": 3.0,
+      "reference": "reference/card_29.png"
+    },
+    {
+      "id": 30,
+      "lines": [
+        "KÜHLENDE",
+        "MUSKEL &",
+        "GELENKS",
+        "CREME"
+      ],
+      "assets": [
+        "kuehl"
+      ],
+      "theme": "relief",
+      "first_frame": 3436,
+      "last_frame": 3540,
+      "frames": 105,
+      "seconds": 3.5,
+      "reference": "reference/card_30.png"
+    },
+    {
+      "id": 31,
+      "lines": [
+        "WÄRMENDE",
+        "MUSKEL &",
+        "GELENKS",
+        "CREME"
+      ],
+      "assets": [
+        "warm"
+      ],
+      "theme": "gold",
+      "first_frame": 3541,
+      "last_frame": 3645,
+      "frames": 105,
+      "seconds": 3.5,
+      "reference": "reference/card_31.png"
+    },
+    {
+      "id": 32,
+      "lines": [
+        "HOL DIR",
+        "ERLEICHTERUNG",
+        "FÜR",
+        "KOPF & KÖRPER"
+      ],
+      "assets": [],
+      "theme": "relief",
+      "first_frame": 3646,
+      "last_frame": 3735,
+      "frames": 90,
+      "seconds": 3.0,
+      "reference": "reference/card_32.png"
+    },
+    {
+      "id": 33,
+      "lines": [
+        "CBD ÖL",
+        "ENTLASTUNG"
+      ],
+      "assets": [
+        "entlastung"
+      ],
+      "theme": "relief",
+      "first_frame": 3736,
+      "last_frame": 3855,
+      "frames": 120,
+      "seconds": 4.0,
+      "reference": "reference/card_33.png"
+    },
+    {
+      "id": 34,
+      "lines": [
+        "ANTISTRESS",
+        "BEWEGUNG",
+        "VERDAUUNG"
+      ],
+      "assets": [
+        "paw"
+      ],
+      "theme": "pets",
+      "first_frame": 3856,
+      "last_frame": 3945,
+      "frames": 90,
+      "seconds": 3.0,
+      "reference": "reference/card_34.png"
+    },
+    {
+      "id": 35,
+      "lines": [
+        "HANF",
+        "FLEISCH",
+        "SNACKS"
+      ],
+      "assets": [
+        "sos_original"
+      ],
+      "theme": "pets",
+      "first_frame": 3946,
+      "last_frame": 4065,
+      "frames": 120,
+      "seconds": 4.0,
+      "reference": "reference/card_35.png"
+    },
+    {
+      "id": 36,
+      "lines": [
+        "SOS BEI",
+        "STRESS &",
+        "UNRUHE"
+      ],
+      "assets": [
+        "dog_original"
+      ],
+      "theme": "pets",
+      "first_frame": 4066,
+      "last_frame": 4185,
+      "frames": 120,
+      "seconds": 4.0,
+      "reference": "reference/card_36.png"
+    },
+    {
+      "id": 37,
+      "lines": [
+        "100% NATUR",
+        "OHNE ZUSÄTZE",
+        "GETREIDEFREI"
+      ],
+      "assets": [
+        "natural_leaf"
+      ],
+      "theme": "pets",
+      "first_frame": 4186,
+      "last_frame": 4275,
+      "frames": 90,
+      "seconds": 3.0,
+      "reference": "reference/card_37.png"
+    },
+    {
+      "id": 38,
+      "lines": [
+        "HAST DU",
+        "AUSZEIT",
+        "NÖTIG?"
+      ],
+      "assets": [],
+      "theme": "tea",
+      "first_frame": 4276,
+      "last_frame": 4365,
+      "frames": 90,
+      "seconds": 3.0,
+      "reference": "reference/card_38.png"
+    },
+    {
+      "id": 39,
+      "lines": [
+        "ENTSPANNENDE",
+        "BIO",
+        "HANF TEES"
+      ],
+      "assets": [
+        "tee"
+      ],
+      "theme": "tea",
+      "first_frame": 4366,
+      "last_frame": 4440,
+      "frames": 75,
+      "seconds": 2.5,
+      "reference": "reference/card_39.png"
+    },
+    {
+      "id": 40,
+      "lines": [
+        "WENN DIR DAS",
+        "LEBEN",
+        "SAURES GIBT..."
+      ],
+      "assets": [],
+      "theme": "tea",
+      "first_frame": 4441,
+      "last_frame": 4530,
+      "frames": 90,
+      "seconds": 3.0,
+      "reference": "reference/card_40.png"
+    },
+    {
+      "id": 41,
+      "lines": [
+        "HOL DIR",
+        "HANF & CBD"
+      ],
+      "assets": [
+        "leaf"
+      ],
+      "theme": "tea",
+      "first_frame": 4531,
+      "last_frame": 4635,
+      "frames": 105,
+      "seconds": 3.5,
+      "reference": "reference/card_41.png"
+    },
+    {
+      "id": 42,
+      "lines": [
+        "HAB GUTE",
+        "NÄCHTE",
+        "CBD/CBN ÖL"
+      ],
+      "assets": [
+        "nacht"
+      ],
+      "theme": "night",
+      "first_frame": 4636,
+      "last_frame": 4755,
+      "frames": 120,
+      "seconds": 4.0,
+      "reference": "reference/card_42.png"
+    },
+    {
+      "id": 43,
+      "lines": [
+        "UNRUHIGES",
+        "BAUCH",
+        "GEFÜHL?"
+      ],
+      "assets": [
+        "darm"
+      ],
+      "theme": "balance",
+      "first_frame": 4756,
+      "last_frame": 4875,
+      "frames": 120,
+      "seconds": 4.0,
+      "reference": "reference/card_43.png"
+    },
+    {
+      "id": 44,
+      "lines": [
+        "FACH",
+        "BÜCHER"
+      ],
+      "assets": [
+        "buch"
+      ],
+      "theme": "brand",
+      "first_frame": 4876,
+      "last_frame": 4980,
+      "frames": 105,
+      "seconds": 3.5,
+      "reference": "reference/card_44.png"
+    },
+    {
+      "id": 45,
+      "lines": [
+        "KOMM",
+        "GERNE",
+        "REIN."
+      ],
+      "assets": [
+        "logo"
+      ],
+      "theme": "brand",
+      "first_frame": 4981,
+      "last_frame": 5055,
+      "frames": 75,
+      "seconds": 2.5,
+      "reference": "reference/card_45.png"
+    },
+    {
+      "id": 46,
+      "lines": [
+        "WIR NEHMEN",
+        "UNS ZEIT."
+      ],
+      "assets": [],
+      "theme": "brand",
+      "first_frame": 5056,
+      "last_frame": 5130,
+      "frames": 75,
+      "seconds": 2.5,
+      "reference": "reference/card_46.png"
+    },
+    {
+      "id": 47,
+      "lines": [
+        "DU SUCHST",
+        "EIN",
+        "BESONDERES",
+        "GESCHENK?"
+      ],
+      "assets": [],
+      "theme": "gift",
+      "first_frame": 5131,
+      "last_frame": 5280,
+      "frames": 150,
+      "seconds": 5.0,
+      "reference": "reference/card_47.png"
+    },
+    {
+      "id": 48,
+      "lines": [
+        "CBD",
+        "BADE",
+        "KUGELN"
+      ],
+      "assets": [
+        "bad"
+      ],
+      "theme": "gift",
+      "first_frame": 5281,
+      "last_frame": 5490,
+      "frames": 210,
+      "seconds": 7.0,
+      "reference": "reference/card_48.png"
+    },
+    {
+      "id": 49,
+      "lines": [
+        "CBD",
+        "SEIFEN"
+      ],
+      "assets": [
+        "seife"
+      ],
+      "theme": "gift",
+      "first_frame": 5491,
+      "last_frame": 5565,
+      "frames": 75,
+      "seconds": 2.5,
+      "reference": "reference/card_49.png"
+    },
+    {
+      "id": 50,
+      "lines": [
+        "KUNSTDESIGN",
+        "AUS TIROL"
+      ],
+      "assets": [
+        "tasse",
+        "mug_angle_original"
+      ],
+      "theme": "gift",
+      "first_frame": 5566,
+      "last_frame": 5640,
+      "frames": 75,
+      "seconds": 2.5,
+      "reference": "reference/card_50.png"
+    },
+    {
+      "id": 51,
+      "lines": [
+        "SCHENKE EIN",
+        "BESONDERES",
+        "STÜCK",
+        "SEEFELD"
+      ],
+      "assets": [],
+      "theme": "gold",
+      "first_frame": 5641,
+      "last_frame": 5715,
+      "frames": 75,
+      "seconds": 2.5,
+      "reference": "reference/card_51.png"
+    },
+    {
+      "id": 52,
+      "lines": [],
+      "assets": [
+        "schoko_group"
+      ],
+      "theme": "gold",
+      "first_frame": 5716,
+      "last_frame": 5970,
+      "frames": 255,
+      "seconds": 8.5,
+      "reference": "reference/card_52.png"
+    },
+    {
+      "id": 53,
+      "lines": [
+        "IMKER",
+        "HANFHONIG",
+        "AUS MÖSERN",
+        "BEI SEEFELD"
+      ],
+      "assets": [
+        "honig"
+      ],
+      "theme": "gold",
+      "first_frame": 5971,
+      "last_frame": 6090,
+      "frames": 120,
+      "seconds": 4.0,
+      "reference": "reference/card_53.png"
+    },
+    {
+      "id": 54,
+      "lines": [
+        "MODERN LIFESTYLE",
+        "FROM NATURE"
+      ],
+      "assets": [
+        "closing_original"
+      ],
+      "theme": "brand",
+      "first_frame": 6091,
+      "last_frame": 6240,
+      "frames": 150,
+      "seconds": 5.0,
+      "reference": "reference/card_54.png"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "videos": [
+    {
+      "file": "UNSER_KRAUT_HERBST_20261016_VORSCHAU_768x512.mp4",
+      "dimensions": "768x512",
+      "fps": 30,
+      "frames": 6240,
+      "seconds": 208,
+      "audio": false,
+      "size_bytes": 21560012,
+      "full_decode": "passed"
+    },
+    {
+      "file": "UNSER_KRAUT_HERBST_20261016_192x128.mp4",
+      "dimensions": "192x128",
+      "fps": 30,
+      "frames": 6240,
+      "seconds": 208,
+      "audio": false,
+      "size_bytes": 7612864,
+      "full_decode": "passed"
+    },
+    {
+      "file": "UNSER_KRAUT_HERBST_20261016_192x128_KOMPATIBEL.avi",
+      "dimensions": "192x128",
+      "fps": 30,
+      "frames": 6240,
+      "seconds": 208,
+      "audio": false,
+      "size_bytes": 12677298,
+      "full_decode": "passed"
+    }
+  ],
+  "source_cards": 54,
+  "output_cards": 54,
+  "exact_caption_lines": true,
+  "same_order": true,
+  "same_timing": true,
+  "sampled_compressed_cards": 54,
+  "physical_controller_test": "pending"
+}

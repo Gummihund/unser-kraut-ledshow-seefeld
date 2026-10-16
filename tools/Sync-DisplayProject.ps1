@@ -24,7 +24,7 @@ function Check-Relative([string]$Relative) {
     if ($Relative -match '(^|/)(\.\.?|\.git|\.codex|__pycache__)(/|$)' -or [IO.Path]::IsPathRooted($Relative)) { throw "Forbidden project path: $Relative" }
     if ($Relative -in @('README.md','AGENTS.md','PC-UEBERGREIFEND.md','.gitignore','tools/Sync-DisplayProject.ps1')) { return }
     if ($Relative -notmatch '^ledshow-seefeld/' -or $Relative -notmatch '(\.(md|html|css|js|py|sh|mp4|avi|png|jpg|jpeg|webp|gif|json|ttf|otf)|/\.gitkeep)$') {
-        if ($Relative -notmatch '^ledshow-seefeld/production/blender-show-20261014/UNSER_KRAUT_3D\.blend$') { throw "Not an approved display file: $Relative" }
+        if ($Relative -notmatch '^ledshow-seefeld/production/(blender-show-20261014/UNSER_KRAUT_3D|herbst-show-20261016/UNSER_KRAUT_HERBST_3D)\.blend$') { throw "Not an approved display file: $Relative" }
     }
 }
 function Inventory([string]$Root,[string[]]$Paths) {

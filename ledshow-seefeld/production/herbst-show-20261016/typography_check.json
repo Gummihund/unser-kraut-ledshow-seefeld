@@ -1,0 +1,595 @@
+{
+  "cards": [
+    {
+      "card": 1,
+      "all_lines": [
+        "UNSER KRAUT",
+        "DEIN FACHGESCHÄFT"
+      ],
+      "mode": "split",
+      "font_px": 46,
+      "native_font_px": 11.5
+    },
+    {
+      "card": 2,
+      "all_lines": [
+        "VERTRAUEN",
+        "DURCH",
+        "KOMPETENZ."
+      ],
+      "mode": "full",
+      "font_px": 102,
+      "native_font_px": 25.5
+    },
+    {
+      "card": 3,
+      "all_lines": [
+        "5,0 VON 5 STERNEN",
+        "GOOGLE",
+        "TRUSTED SHOPS",
+        "HEROLD"
+      ],
+      "mode": "stars",
+      "font_px": 62,
+      "native_font_px": 15.5
+    },
+    {
+      "card": 4,
+      "all_lines": [
+        "WENN DIR",
+        "ALLES",
+        "ZUVIEL WIRD",
+        "NATURKRAFT",
+        "CBD ÖL"
+      ],
+      "mode": "split",
+      "font_px": 49,
+      "native_font_px": 12.25
+    },
+    {
+      "card": 5,
+      "all_lines": [
+        "MACHT NICHT",
+        "BERAUSCHT",
+        "LEGAL IN DER EU"
+      ],
+      "mode": "full",
+      "font_px": 78,
+      "native_font_px": 19.5
+    },
+    {
+      "card": 6,
+      "all_lines": [
+        "HOL DIR",
+        "DEIN PASSENDES"
+      ],
+      "mode": "bottom",
+      "font_px": 54,
+      "native_font_px": 13.5
+    },
+    {
+      "card": 7,
+      "all_lines": [
+        "NEU BEI",
+        "HANF & CBD?",
+        "WIR ERKLÄREN",
+        "ES DIR GERNE."
+      ],
+      "mode": "split",
+      "font_px": 43,
+      "native_font_px": 10.75
+    },
+    {
+      "card": 8,
+      "all_lines": [
+        "HAUTPFLEGE",
+        "FÜR HÖHERE",
+        "ANSPRÜCHE",
+        "GESUCHT?"
+      ],
+      "mode": "split",
+      "font_px": 50,
+      "native_font_px": 12.5
+    },
+    {
+      "card": 9,
+      "all_lines": [
+        "ENTDECKE UNSER",
+        "großes Sortiment",
+        "an Bio",
+        "GESICHTS- &",
+        "KÖRPERPFLEGE"
+      ],
+      "mode": "full",
+      "font_px": 71,
+      "native_font_px": 17.75
+    },
+    {
+      "card": 10,
+      "all_lines": [
+        "ZERTIFIZIERTE",
+        "BIO - ORGANIC",
+        "KOSMETIK",
+        "MIT CBD"
+      ],
+      "mode": "split",
+      "font_px": 45,
+      "native_font_px": 11.25
+    },
+    {
+      "card": 11,
+      "all_lines": [
+        "Spezial PFLEGE",
+        "TROCKENE",
+        "HAUT"
+      ],
+      "mode": "split",
+      "font_px": 44,
+      "native_font_px": 11.0
+    },
+    {
+      "card": 12,
+      "all_lines": [
+        "ERSTE HILFE",
+        "FÜR DEINE",
+        "HAUT"
+      ],
+      "mode": "split",
+      "font_px": 51,
+      "native_font_px": 12.75
+    },
+    {
+      "card": 13,
+      "all_lines": [
+        "Großes Sortiment",
+        "für",
+        "HUND",
+        "KATZE & PFERD"
+      ],
+      "mode": "full",
+      "font_px": 81,
+      "native_font_px": 20.25
+    },
+    {
+      "card": 14,
+      "all_lines": [
+        "CBD ÖL",
+        "Tropfen"
+      ],
+      "mode": "split",
+      "font_px": 88,
+      "native_font_px": 22.0
+    },
+    {
+      "card": 15,
+      "all_lines": [
+        "ANTISTRESS",
+        "GELENKE",
+        "VERDAUUNG"
+      ],
+      "mode": "split",
+      "font_px": 53,
+      "native_font_px": 13.25
+    },
+    {
+      "card": 16,
+      "all_lines": [
+        "TIERPFLEGE"
+      ],
+      "mode": "split",
+      "font_px": 54,
+      "native_font_px": 13.5
+    },
+    {
+      "card": 17,
+      "all_lines": [
+        "REINE NATUR",
+        "FÜR DEINE",
+        "GESUNDE",
+        "KÜCHE"
+      ],
+      "mode": "full",
+      "font_px": 88,
+      "native_font_px": 22.0
+    },
+    {
+      "card": 18,
+      "all_lines": [
+        "OMEGA 3",
+        "Quelle"
+      ],
+      "mode": "split",
+      "font_px": 73,
+      "native_font_px": 18.25
+    },
+    {
+      "card": 19,
+      "all_lines": [
+        "OMEGA 3",
+        "Quelle"
+      ],
+      "mode": "split",
+      "font_px": 73,
+      "native_font_px": 18.25
+    },
+    {
+      "card": 20,
+      "all_lines": [
+        "BIO",
+        "Schoko",
+        "Creme"
+      ],
+      "mode": "split",
+      "font_px": 94,
+      "native_font_px": 23.5
+    },
+    {
+      "card": 21,
+      "all_lines": [
+        "BIO AUS",
+        "ÖSTERREICH"
+      ],
+      "mode": "top",
+      "font_px": 66,
+      "native_font_px": 16.5
+    },
+    {
+      "card": 22,
+      "all_lines": [
+        "Für",
+        "SPORT - FIGUR",
+        "& ENERGIE"
+      ],
+      "mode": "full",
+      "font_px": 92,
+      "native_font_px": 23.0
+    },
+    {
+      "card": 23,
+      "all_lines": [
+        "VEGANE",
+        "PROTEINE",
+        "für die Figur"
+      ],
+      "mode": "split",
+      "font_px": 58,
+      "native_font_px": 14.5
+    },
+    {
+      "card": 24,
+      "all_lines": [
+        "HANF",
+        "FATBURNER",
+        "mit Kräutern"
+      ],
+      "mode": "split",
+      "font_px": 54,
+      "native_font_px": 13.5
+    },
+    {
+      "card": 25,
+      "all_lines": [
+        "WOHLBEFINDEN",
+        "FÜR",
+        "SIE & IHN"
+      ],
+      "mode": "full",
+      "font_px": 84,
+      "native_font_px": 21.0
+    },
+    {
+      "card": 26,
+      "all_lines": [
+        "FÜR",
+        "DIE",
+        "FRAU"
+      ],
+      "mode": "split",
+      "font_px": 94,
+      "native_font_px": 23.5
+    },
+    {
+      "card": 27,
+      "all_lines": [
+        "FÜR",
+        "DEN MANN"
+      ],
+      "mode": "split",
+      "font_px": 62,
+      "native_font_px": 15.5
+    },
+    {
+      "card": 28,
+      "all_lines": [
+        "DEINE GELENKE",
+        "GEZIELT",
+        "UNTERSTÜTZEN"
+      ],
+      "mode": "split",
+      "font_px": 41,
+      "native_font_px": 10.25
+    },
+    {
+      "card": 29,
+      "all_lines": [
+        "ANSTRENGENDEN",
+        "TAG",
+        "GEHABT?"
+      ],
+      "mode": "full",
+      "font_px": 75,
+      "native_font_px": 18.75
+    },
+    {
+      "card": 30,
+      "all_lines": [
+        "KÜHLENDE",
+        "MUSKEL &",
+        "GELENKS",
+        "CREME"
+      ],
+      "mode": "split",
+      "font_px": 61,
+      "native_font_px": 15.25
+    },
+    {
+      "card": 31,
+      "all_lines": [
+        "WÄRMENDE",
+        "MUSKEL &",
+        "GELENKS",
+        "CREME"
+      ],
+      "mode": "split",
+      "font_px": 56,
+      "native_font_px": 14.0
+    },
+    {
+      "card": 32,
+      "all_lines": [
+        "HOL DIR",
+        "ERLEICHTERUNG",
+        "FÜR",
+        "KOPF & KÖRPER"
+      ],
+      "mode": "full",
+      "font_px": 79,
+      "native_font_px": 19.75
+    },
+    {
+      "card": 33,
+      "all_lines": [
+        "CBD ÖL",
+        "ENTLASTUNG"
+      ],
+      "mode": "split",
+      "font_px": 49,
+      "native_font_px": 12.25
+    },
+    {
+      "card": 34,
+      "all_lines": [
+        "ANTISTRESS",
+        "BEWEGUNG",
+        "VERDAUUNG"
+      ],
+      "mode": "split",
+      "font_px": 53,
+      "native_font_px": 13.25
+    },
+    {
+      "card": 35,
+      "all_lines": [
+        "HANF",
+        "FLEISCH",
+        "SNACKS"
+      ],
+      "mode": "split",
+      "font_px": 79,
+      "native_font_px": 19.75
+    },
+    {
+      "card": 36,
+      "all_lines": [
+        "SOS BEI",
+        "STRESS &",
+        "UNRUHE"
+      ],
+      "mode": "split",
+      "font_px": 68,
+      "native_font_px": 17.0
+    },
+    {
+      "card": 37,
+      "all_lines": [
+        "100% NATUR",
+        "OHNE ZUSÄTZE",
+        "GETREIDEFREI"
+      ],
+      "mode": "split",
+      "font_px": 43,
+      "native_font_px": 10.75
+    },
+    {
+      "card": 38,
+      "all_lines": [
+        "HAST DU",
+        "AUSZEIT",
+        "NÖTIG?"
+      ],
+      "mode": "full",
+      "font_px": 102,
+      "native_font_px": 25.5
+    },
+    {
+      "card": 39,
+      "all_lines": [
+        "ENTSPANNENDE",
+        "BIO",
+        "HANF TEES"
+      ],
+      "mode": "split",
+      "font_px": 40,
+      "native_font_px": 10.0
+    },
+    {
+      "card": 40,
+      "all_lines": [
+        "WENN DIR DAS",
+        "LEBEN",
+        "SAURES GIBT..."
+      ],
+      "mode": "full",
+      "font_px": 89,
+      "native_font_px": 22.25
+    },
+    {
+      "card": 41,
+      "all_lines": [
+        "HOL DIR",
+        "HANF & CBD"
+      ],
+      "mode": "split",
+      "font_px": 54,
+      "native_font_px": 13.5
+    },
+    {
+      "card": 42,
+      "all_lines": [
+        "HAB GUTE",
+        "NÄCHTE",
+        "CBD/CBN ÖL"
+      ],
+      "mode": "split",
+      "font_px": 54,
+      "native_font_px": 13.5
+    },
+    {
+      "card": 43,
+      "all_lines": [
+        "UNRUHIGES",
+        "BAUCH",
+        "GEFÜHL?"
+      ],
+      "mode": "split",
+      "font_px": 56,
+      "native_font_px": 14.0
+    },
+    {
+      "card": 44,
+      "all_lines": [
+        "FACH",
+        "BÜCHER"
+      ],
+      "mode": "split",
+      "font_px": 79,
+      "native_font_px": 19.75
+    },
+    {
+      "card": 45,
+      "all_lines": [
+        "KOMM",
+        "GERNE",
+        "REIN."
+      ],
+      "mode": "split",
+      "font_px": 94,
+      "native_font_px": 23.5
+    },
+    {
+      "card": 46,
+      "all_lines": [
+        "WIR NEHMEN",
+        "UNS ZEIT."
+      ],
+      "mode": "full",
+      "font_px": 102,
+      "native_font_px": 25.5
+    },
+    {
+      "card": 47,
+      "all_lines": [
+        "DU SUCHST",
+        "EIN",
+        "BESONDERES",
+        "GESCHENK?"
+      ],
+      "mode": "full",
+      "font_px": 88,
+      "native_font_px": 22.0
+    },
+    {
+      "card": 48,
+      "all_lines": [
+        "CBD",
+        "BADE",
+        "KUGELN"
+      ],
+      "mode": "split",
+      "font_px": 80,
+      "native_font_px": 20.0
+    },
+    {
+      "card": 49,
+      "all_lines": [
+        "CBD",
+        "SEIFEN"
+      ],
+      "mode": "split",
+      "font_px": 93,
+      "native_font_px": 23.25
+    },
+    {
+      "card": 50,
+      "all_lines": [
+        "KUNSTDESIGN",
+        "AUS TIROL"
+      ],
+      "mode": "split",
+      "font_px": 46,
+      "native_font_px": 11.5
+    },
+    {
+      "card": 51,
+      "all_lines": [
+        "SCHENKE EIN",
+        "BESONDERES",
+        "STÜCK",
+        "SEEFELD"
+      ],
+      "mode": "full",
+      "font_px": 88,
+      "native_font_px": 22.0
+    },
+    {
+      "card": 52,
+      "all_lines": [],
+      "mode": "none",
+      "font_px": null,
+      "native_font_px": null
+    },
+    {
+      "card": 53,
+      "all_lines": [
+        "IMKER",
+        "HANFHONIG",
+        "AUS MÖSERN",
+        "BEI SEEFELD"
+      ],
+      "mode": "split",
+      "font_px": 50,
+      "native_font_px": 12.5
+    },
+    {
+      "card": 54,
+      "all_lines": [
+        "MODERN LIFESTYLE",
+        "FROM NATURE"
+      ],
+      "mode": "bottom",
+      "font_px": 54,
+      "native_font_px": 13.5
+    }
+  ],
+  "clipping": []
+}

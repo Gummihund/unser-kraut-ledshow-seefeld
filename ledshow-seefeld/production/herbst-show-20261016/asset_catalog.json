@@ -1,0 +1,432 @@
+{
+  "akut": {
+    "file": "akut_texture.png",
+    "size": [
+      850,
+      495
+    ],
+    "kind": "panel",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "bad": {
+    "file": "bad_texture.png",
+    "size": [
+      850,
+      602
+    ],
+    "kind": "panel",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "bio_badges": {
+    "file": "bio_badges_texture.png",
+    "size": [
+      850,
+      266
+    ],
+    "kind": "graphic",
+    "green_key": true,
+    "original_pixels": true
+  },
+  "buch": {
+    "file": "buch_texture.png",
+    "size": [
+      850,
+      733
+    ],
+    "kind": "panel",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "cbd10": {
+    "file": "cbd10_texture.png",
+    "size": [
+      351,
+      1100
+    ],
+    "kind": "dropper",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "cbd20": {
+    "file": "cbd20_texture.png",
+    "size": [
+      351,
+      1100
+    ],
+    "kind": "dropper",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "cbd40": {
+    "file": "cbd40_texture.png",
+    "size": [
+      352,
+      1100
+    ],
+    "kind": "dropper",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "cbd5": {
+    "file": "cbd5_texture.png",
+    "size": [
+      349,
+      1100
+    ],
+    "kind": "dropper",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "closing_original": {
+    "file": "closing_original_texture.png",
+    "size": [
+      850,
+      460
+    ],
+    "kind": "graphic",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "darm": {
+    "file": "darm_texture.png",
+    "size": [
+      590,
+      1100
+    ],
+    "kind": "jar",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "dog_original": {
+    "file": "dog_original_texture.png",
+    "size": [
+      850,
+      628
+    ],
+    "kind": "graphic",
+    "green_key": true,
+    "original_pixels": true
+  },
+  "entlastung": {
+    "file": "entlastung_texture.png",
+    "size": [
+      352,
+      1100
+    ],
+    "kind": "dropper",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "fatburner": {
+    "file": "fatburner_texture.png",
+    "size": [
+      586,
+      1100
+    ],
+    "kind": "jar",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "frau": {
+    "file": "frau_texture.png",
+    "size": [
+      850,
+      517
+    ],
+    "kind": "panel",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "gelenke": {
+    "file": "gelenke_texture.png",
+    "size": [
+      585,
+      1100
+    ],
+    "kind": "jar",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "honig": {
+    "file": "honig_texture.png",
+    "size": [
+      850,
+      995
+    ],
+    "kind": "panel",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "kuehl": {
+    "file": "kuehl_texture.png",
+    "size": [
+      420,
+      1100
+    ],
+    "kind": "tube",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "leaf": {
+    "file": "leaf_texture.png",
+    "size": [
+      723,
+      1100
+    ],
+    "kind": "graphic",
+    "green_key": true,
+    "original_pixels": true
+  },
+  "logo": {
+    "file": "logo_texture.png",
+    "size": [
+      850,
+      850
+    ],
+    "kind": "coin",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "mann": {
+    "file": "mann_texture.png",
+    "size": [
+      586,
+      1100
+    ],
+    "kind": "jar",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "mug_angle_original": {
+    "file": "mug_angle_original_texture.png",
+    "size": [
+      850,
+      802
+    ],
+    "kind": "graphic",
+    "green_key": true,
+    "original_pixels": true
+  },
+  "nacht": {
+    "file": "nacht_texture.png",
+    "size": [
+      341,
+      1100
+    ],
+    "kind": "dropper",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "natural_leaf": {
+    "file": "natural_leaf_texture.png",
+    "size": [
+      398,
+      1100
+    ],
+    "kind": "graphic",
+    "green_key": true,
+    "original_pixels": true
+  },
+  "nougat": {
+    "file": "nougat_texture.png",
+    "size": [
+      633,
+      1100
+    ],
+    "kind": "jar",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "organic": {
+    "file": "organic_texture.png",
+    "size": [
+      850,
+      1059
+    ],
+    "kind": "graphic",
+    "green_key": true,
+    "original_pixels": true
+  },
+  "paw": {
+    "file": "paw_texture.png",
+    "size": [
+      850,
+      1075
+    ],
+    "kind": "graphic",
+    "green_key": true,
+    "original_pixels": true
+  },
+  "pet_care_original": {
+    "file": "pet_care_original_texture.png",
+    "size": [
+      850,
+      921
+    ],
+    "kind": "graphic",
+    "green_key": true,
+    "original_pixels": true
+  },
+  "pet_snacks_original": {
+    "file": "pet_snacks_original_texture.png",
+    "size": [
+      850,
+      979
+    ],
+    "kind": "graphic",
+    "green_key": true,
+    "original_pixels": true
+  },
+  "pflege": {
+    "file": "pflege_texture.png",
+    "size": [
+      249,
+      1100
+    ],
+    "kind": "tube",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "pfoten": {
+    "file": "pfoten_texture.png",
+    "size": [
+      850,
+      482
+    ],
+    "kind": "panel",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "protein": {
+    "file": "protein_texture.png",
+    "size": [
+      730,
+      1100
+    ],
+    "kind": "jar",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "samen": {
+    "file": "samen_texture.png",
+    "size": [
+      850,
+      844
+    ],
+    "kind": "jar",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "schoko_group": {
+    "file": "schoko_group_texture.png",
+    "size": [
+      850,
+      676
+    ],
+    "kind": "panel",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "seife": {
+    "file": "seife_texture.png",
+    "size": [
+      850,
+      827
+    ],
+    "kind": "panel",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "sos_original": {
+    "file": "sos_original_texture.png",
+    "size": [
+      739,
+      1100
+    ],
+    "kind": "graphic",
+    "green_key": true,
+    "original_pixels": true
+  },
+  "speiseoel": {
+    "file": "speiseoel_texture.png",
+    "size": [
+      328,
+      1100
+    ],
+    "kind": "dropper",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "spray": {
+    "file": "spray_texture.png",
+    "size": [
+      258,
+      1100
+    ],
+    "kind": "dropper",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "tasse": {
+    "file": "tasse_texture.png",
+    "size": [
+      850,
+      700
+    ],
+    "kind": "panel",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "tee": {
+    "file": "tee_texture.png",
+    "size": [
+      683,
+      1100
+    ],
+    "kind": "pouch",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "tier10": {
+    "file": "tier10_texture.png",
+    "size": [
+      350,
+      1100
+    ],
+    "kind": "dropper",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "tier5": {
+    "file": "tier5_texture.png",
+    "size": [
+      352,
+      1100
+    ],
+    "kind": "dropper",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "trocken": {
+    "file": "trocken_texture.png",
+    "size": [
+      531,
+      1100
+    ],
+    "kind": "tube",
+    "green_key": false,
+    "original_pixels": true
+  },
+  "warm": {
+    "file": "warm_texture.png",
+    "size": [
+      421,
+      1100
+    ],
+    "kind": "tube",
+    "green_key": false,
+    "original_pixels": true
+  }
+}
