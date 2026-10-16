@@ -19,7 +19,13 @@ if (Test-Path -LiteralPath $statePath) {
     if ($state.sharedRoot -ne $SharedRoot) { throw 'Stored state belongs to another NAS folder.' }
     foreach ($p in $state.hashes.PSObject.Properties) { $baseline[$p.Name] = [string]$p.Value }
 }
-function Get-Hash([string]$Path) { (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash }
+function Get-Hash([string]$Path) {
+    # Buffer network reads: the default small reads are costly over SMB/Tailscale.
+    $stream = [IO.FileStream]::new($Path, [IO.FileMode]::Open, [IO.FileAccess]::Read, [IO.FileShare]::Read, 1048576, [IO.FileOptions]::SequentialScan)
+    $algorithm = [Security.Cryptography.SHA256]::Create()
+    try { return [BitConverter]::ToString($algorithm.ComputeHash($stream)).Replace('-', '') }
+    finally { $algorithm.Dispose(); $stream.Dispose() }
+}
 function Check-Relative([string]$Relative) {
     if ($Relative -match '(^|/)(\.\.?|\.git|\.codex|__pycache__)(/|$)' -or [IO.Path]::IsPathRooted($Relative)) { throw "Forbidden project path: $Relative" }
     if ($Relative -in @('README.md','AGENTS.md','PC-UEBERGREIFEND.md','.gitignore','tools/Sync-DisplayProject.ps1')) { return }
