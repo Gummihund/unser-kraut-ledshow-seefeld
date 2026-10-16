@@ -32,6 +32,8 @@ Die Szenen verwenden modellierte Flaschen, gebogene Produktflächen, räumliche 
 
 ## Bearbeiten und neu rendern
 
+Für einen zweiten PC zuerst [START-HIER.md](../../../START-HIER.md) und [TOOLCHAIN.md](../../../TOOLCHAIN.md) lesen. Das Werkzeug-Setup richtet die festgelegten Versionen lokal ein. Die Bewertung für das Schaufenster am Bahnhof steht in [BAHNHOF-PRUEFUNG.md](BAHNHOF-PRUEFUNG.md). Neue Varianten bekommen eigene Ordner und Namen; die folgenden Befehle beschreiben die vollständige Originalshow.
+
 `UNSER_KRAUT_HERBST_3D.blend` enthält alle 54 animierten Szenen und gepackte Texturen. Für das Öffnen sind keine automatisch auszuführenden Skripte erforderlich. Die großen LED-Texte entstehen beim abschließenden Export, damit sie bei 192 × 128 Pixeln stabil lesbar bleiben.
 
 Mit normalem Python und den kostenlosen Paketen Pillow, numpy und imageio-ffmpeg:

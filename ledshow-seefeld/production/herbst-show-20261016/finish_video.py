@@ -4,11 +4,10 @@ import sys,json,re,subprocess,os,zipfile
 import numpy as np
 from PIL import Image,ImageDraw
 ROOT=Path(__file__).resolve().parent
-sys.path.insert(0,str(ROOT.parents[3]/'tools/led-motion-runtime'))
 import imageio_ffmpeg
 from compose import STORY,compose,contact_sheets,font,layout
 FF=imageio_ffmpeg.get_ffmpeg_exe()
-BUILD=ROOT/'build';ENC=BUILD/'encoded';ENC.mkdir(exist_ok=True)
+BUILD=ROOT/'build';ENC=BUILD/'encoded';ENC.mkdir(parents=True,exist_ok=True)
 DEST=ROOT.parents[1]/'videos/schaufenster-unten-led'
 NAME='UNSER_KRAUT_HERBST_20261016'
 FILES=[NAME+'_VORSCHAU_768x512.mp4',NAME+'_192x128.mp4',NAME+'_192x128_KOMPATIBEL.avi']
@@ -72,7 +71,8 @@ def viewer():
     (ROOT/'VORSCHAU.html').write_text(template.replace('@@OPTIONS@@',options).replace('@@ROWS@@',rows),encoding='utf-8')
 
 def package():
-    repo=ROOT.parents[2];out=ROOT.parents[3]/'output'/'UNSER_KRAUT_Herbst_3D_Komplett_20261016.zip'
+    repo=ROOT.parents[2];out=BUILD/'UNSER_KRAUT_Herbst_3D_Komplett_20261016.zip'
+    out.parent.mkdir(parents=True,exist_ok=True)
     files=[]
     for p in ROOT.rglob('*'):
         if not p.is_file() or 'build' in p.relative_to(ROOT).parts or p.suffix in ['.blend1','.pyc'] or '__pycache__' in p.parts:continue

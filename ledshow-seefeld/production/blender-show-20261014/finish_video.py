@@ -7,8 +7,6 @@ import sys,subprocess,json,math,re
 from PIL import Image,ImageDraw,ImageFont
 import numpy as np
 ROOT=Path(__file__).resolve().parent
-runtime=ROOT.parents[3]/'tools/led-motion-runtime'
-if runtime.exists():sys.path.insert(0,str(runtime))
 import imageio_ffmpeg
 FF=imageio_ffmpeg.get_ffmpeg_exe()
 DEST=ROOT.parents[1]/'videos/schaufenster-unten-led'
@@ -112,8 +110,8 @@ def verify():
 def package():
     import zipfile
     repo=ROOT.parents[2]
-    out=ROOT.parents[3]/'output'/'UNSER_KRAUT_Blender_3D_Show_20261014.zip'
-    out.parent.mkdir(exist_ok=True)
+    out=ROOT/'build'/'UNSER_KRAUT_Blender_3D_Show_20261014.zip'
+    out.parent.mkdir(parents=True,exist_ok=True)
     names=['UNSER_KRAUT_3D.blend','build_show.py','render_frames.py','finish_video.py','README.md','VORSCHAU.html','scene_manifest.json','export_verification.json']
     files=[ROOT/name for name in names]+list((ROOT/'assets').glob('*'))+list((ROOT/'preview').glob('*'))+[MASTER,LED,AVI]
     with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:

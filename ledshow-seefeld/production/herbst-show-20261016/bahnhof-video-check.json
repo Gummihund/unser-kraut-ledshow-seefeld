@@ -1,0 +1,14 @@
+{
+  "file": "UNSER_KRAUT_HERBST_20261016_192x128.mp4",
+  "sha256": "741108d6ad327a50fce6fcf6b7bcd1d69edbbd7dd3e4cf49d4ef306b8815c660",
+  "bytes": 7612864,
+  "expected_width": 192,
+  "expected_height": 128,
+  "expected_fps": 30,
+  "decoded_frames": 6240,
+  "duration_from_frames": 208.0,
+  "audio_present": false,
+  "video_stream": "Stream #0:0[0x1](und): Video: h264 (Constrained Baseline) (avc1 / 0x31637661), yuv420p(progressive), 192x128, 291 kb/s, 30 fps, 30 tbr, 15360 tbn (default)",
+  "errors": [],
+  "passed": true
+}

@@ -2,6 +2,8 @@
 
 Stand: 14.10.2026. NAS DS925+ über bestehendes Tailscale/SMB erreichbar. Heim-PC bei Einrichtung offline; Einrichtung dort noch nicht live geprüft.
 
+Ergänzung 16.10.2026: [START-HIER.md](START-HIER.md) enthält den Einstieg für Christine mit eigenem Codex und einen vollständigen Startauftrag. [TOOLCHAIN.md](TOOLCHAIN.md) und `tools/Setup-DisplayTools.ps1` richten dieselbe lokale Blender-/Python-/FFmpeg-Produktion ein. Werkzeuge am vorbereitenden PC geprüft; tatsächliche Einrichtung, NAS-Schreibzugriff und GitHub-Push auf Christines Windows-PC noch offen. NAS-Zugriff allein überträgt keine GitHub-Berechtigung oder Codex-Plugins. Gemeinsame Quellen und Anweisungen werden geteilt, persönliche Chatverläufe und Anmeldungen bleiben beim jeweiligen Konto.
+
 ## Gemeinsame Dateien
 
 NAS: `\\nas-christoph\Business\Codex-Projekte\unser-kraut-ledshow-seefeld`

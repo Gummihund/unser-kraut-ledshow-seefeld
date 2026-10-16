@@ -1,0 +1,11 @@
+* text=auto eol=lf
+*.blend -text
+*.mp4 -text
+*.avi -text
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.webp -text
+*.gif -text
+*.ttf -text
+*.otf -text

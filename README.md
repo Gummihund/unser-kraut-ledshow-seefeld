@@ -1,5 +1,9 @@
 # unser-kraut-ledshow-seefeld
 
+[Start für Christine / eigenen Codex](START-HIER.md) · [Gleiche Herstellungswerkzeuge einrichten](TOOLCHAIN.md) · [Bewertung der letzten Show für Bahnhof-Laufkundschaft](ledshow-seefeld/production/herbst-show-20261016/BAHNHOF-PRUEFUNG.md)
+
+Der vollständige Stand für die gemeinsame Bearbeitung wird im Geschäfts-Videoordner zusätzlich unter `Codex_Fassung_16-10-26_Gemeinsame_Bearbeitung` abgelegt. Der Haupt-Einstieg `00_START_HIER.html` und `01_MIT_CODEX_BEARBEITEN.html` führen dorthin. Die bisherige Herbst-Fassung bleibt erhalten.
+
 Geschäftsablage mit Videos und vollständiger Projektdokumentation: `\\nas-christoph\Business\christine-geschäft\Videos\Schaufenster-Display\00_START_HIER.html`. Die Fassung vom 16.10.2026 liegt dort unter `Codex_Fassung_16-10-26_Herbst_3D`, mit Startseite, Git-Commit, Dateimanifest und SHA-256-Prüfprotokoll. [Ablageplan und Veröffentlichungsablauf](ledshow-seefeld/NAS-ABLAGE.md).
 
 Vollständige Herbst-Show vom 16.10.2026: [LED-MP4, 192 × 128, 3:28 Minuten](ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_HERBST_20261016_192x128.mp4). Übernimmt alle 54 Tafeln der gelieferten Show mit neuen Blender-Szenen. [Original-/Neu-Vergleich, Blender-Projekt und Anleitung](ledshow-seefeld/production/herbst-show-20261016/README.md).

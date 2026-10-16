@@ -22,6 +22,10 @@ ledshow-seefeld/output/*
 !ledshow-seefeld/output/mp4/unser-kraut-seefeld-ledshow-192x128.mp4
 __pycache__/
 *.pyc
+.venv/
+.display-tools/
+ledshow-seefeld/production/*/build/
+ledshow-seefeld/production/*/*.blend1
 ledshow-seefeld/production/blender-show-20261014/build/
 ledshow-seefeld/production/blender-show-20261014/*.blend1
 ledshow-seefeld/production/herbst-show-20261016/build/

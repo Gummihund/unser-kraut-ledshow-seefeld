@@ -2,6 +2,8 @@
 
 Stand: 16.10.2026. Zwei Ablagen haben unterschiedliche Aufgaben.
 
+Dauerhafte Nutzerpräferenz: Die zusätzliche Geschäftsablage ist für jede fertige Display-Show Teil des Auftrags und benötigt keine erneute Bestätigung. Nach vollständiger Prüfung jeweils einen datierten Versionsordner samt Quellen, Assets, Storyboard, vollständiger Dokumentation, Herkunft/Git-Commit, Dateimanifest und SHA-256-Prüfprotokoll erstellen und `00_START_HIER.html` aktualisieren. Frühere Fassungen und Originale erhalten.
+
 ## Arbeitsprojekt
 
 `\\nas-christoph\Business\Codex-Projekte\unser-kraut-ledshow-seefeld`
@@ -11,6 +13,10 @@ Gemeinsame Projektkopie für die PCs. Änderungen entstehen im lokalen Git-Clone
 ## Geschäft: Videos und vollständiger Projektstand
 
 `\\nas-christoph\Business\christine-geschäft\Videos\Schaufenster-Display`
+
+`01_MIT_CODEX_BEARBEITEN.html` ist der zusätzliche Einstieg für Christine mit eigenem Codex. Die versionierte Vorlage liegt unter `ledshow-seefeld/display/01_MIT_CODEX_BEARBEITEN.html`; bei Änderungen die geprüfte Datei zusätzlich unter diesem Namen in den Video-Hauptordner kopieren und den SHA-256 vergleichen. Der Einstieg verweist auf [START-HIER.md](../START-HIER.md), [TOOLCHAIN.md](../TOOLCHAIN.md) und die aktuelle gemeinsame Arbeitsprojektkopie. Die nachfolgende Herbst-Ablage bleibt ein festgehaltener Versionsstand und wird dafür nicht überschrieben.
+
+Der geprüfte Projektstand für die gemeinsame Bearbeitung einschließlich derselben fertigen Herbst-Videos und der neuen Werkzeuge/Anleitungen wird separat unter `Codex_Fassung_16-10-26_Gemeinsame_Bearbeitung` veröffentlicht. Dort enthält `START.html` auch direkte Verweise auf den Codex-Einstieg, die Werkzeug-Einrichtung und die Bahnhof-Bewertung. `00_START_HIER.html` im Hauptordner führt auf diesen vollständigen Stand und erhält einen Link zur bisherigen Herbst-Fassung. Die versionierte Vorlage für diesen Haupt-Einstieg liegt unter `ledshow-seefeld/display/00_START_HIER.html`.
 
 `00_START_HIER.html` ist der Einstieg im gewohnten Videoordner. Die neue vollständige Herbst-Show liegt einschließlich aller versionierten Projektdateien unter:
 

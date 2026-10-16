@@ -28,21 +28,29 @@ function Get-Hash([string]$Path) {
 }
 function Check-Relative([string]$Relative) {
     if ($Relative -match '(^|/)(\.\.?|\.git|\.codex|__pycache__)(/|$)' -or [IO.Path]::IsPathRooted($Relative)) { throw "Forbidden project path: $Relative" }
-    if ($Relative -in @('README.md','AGENTS.md','PC-UEBERGREIFEND.md','.gitignore','tools/Sync-DisplayProject.ps1')) { return }
+    if ($Relative -in @('README.md','AGENTS.md','PC-UEBERGREIFEND.md','START-HIER.md','TOOLCHAIN.md','.gitignore','.gitattributes','tools/Sync-DisplayProject.ps1','tools/Setup-DisplayTools.ps1','tools/Test-DisplayVideo.py','tools/display-requirements.txt')) { return }
     if ($Relative -notmatch '^ledshow-seefeld/' -or $Relative -notmatch '(\.(md|html|css|js|py|sh|mp4|avi|png|jpg|jpeg|webp|gif|json|ttf|otf)|/\.gitkeep)$') {
-        if ($Relative -notmatch '^ledshow-seefeld/production/(blender-show-20261014/UNSER_KRAUT_3D|herbst-show-20261016/UNSER_KRAUT_HERBST_3D)\.blend$') { throw "Not an approved display file: $Relative" }
+        if ($Relative -notmatch '^ledshow-seefeld/production/[^/]+/[^/]+\.blend$') { throw "Not an approved display file: $Relative" }
     }
 }
 function Inventory([string]$Root,[string[]]$Paths) {
     $map = @{}
+    # Check each parent directory once per inventory, not once per file over SMB.
+    # A new inventory always starts with a fresh cache; leaf links are still checked.
+    $checkedParents = @{}
+    $checkedParents[$Root] = $true
     foreach ($relative in $Paths) {
         Check-Relative $relative
         $file = Join-Path $Root $relative
         if (Test-Path -LiteralPath $file -PathType Leaf) {
             $cursor = Get-Item -LiteralPath $file -Force
-            while ($cursor.FullName.TrimEnd('\') -ne $Root) {
+            if ($cursor.Attributes -band [IO.FileAttributes]::ReparsePoint) { throw "Linked path forbidden: $relative" }
+            $parentPath = (Split-Path -Parent $cursor.FullName).TrimEnd('\')
+            while (!$checkedParents.ContainsKey($parentPath)) {
+                $cursor = Get-Item -LiteralPath $parentPath -Force
                 if ($cursor.Attributes -band [IO.FileAttributes]::ReparsePoint) { throw "Linked path forbidden: $relative" }
-                $cursor = Get-Item -LiteralPath (Split-Path -Parent $cursor.FullName) -Force
+                $checkedParents[$parentPath] = $true
+                $parentPath = (Split-Path -Parent $cursor.FullName).TrimEnd('\')
             }
             $map[$relative] = Get-Hash $file
         }
