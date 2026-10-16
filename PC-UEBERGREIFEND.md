@@ -44,6 +44,16 @@ Offizielle Dokumentation:
 - [Codex Cloud](https://learn.chatgpt.com/docs/cloud)
 - [Geräte verbinden, SSH und Chat-Übergabe](https://learn.chatgpt.com/docs/remote-connections)
 
+## Zusätzliche Geschäftsablage seit 16.10.2026
+
+Fertige Videos und der gesamte zugehörige versionierte Projektstand werden zusätzlich im gewohnten Geschäftsordner abgelegt:
+
+`\\nas-christoph\Business\christine-geschäft\Videos\Schaufenster-Display`
+
+Dort `00_START_HIER.html` öffnen. Die vollständige Herbst-Show vom 16.10.2026 liegt unter `Codex_Fassung_16-10-26_Herbst_3D`. `START.html` im Versionsordner verlinkt LED-MP4, PC-Vorschau, AVI-Alternative, Blender-Datei, Original/Neu-Vergleich und die gesamte Projektdokumentation. Dateimanifest und SHA-256-Prüfprotokoll halten den zugehörigen Git-Commit und die geprüften Dateien fest. Ältere Ordner bleiben erhalten.
+
+Diese zusätzliche, eigenständige Veröffentlichung ersetzt den obigen Git-/NAS-Arbeitsablauf nicht. [Ablageplan und erneute Veröffentlichung](ledshow-seefeld/NAS-ABLAGE.md). Keine automatische Hintergrundsynchronisierung.
+
 ## Prüfgrenzen
 
 Heim-PC offline: Projektöffnung, GitHub-Anmeldung, Drive-Download und tatsächlicher Videoabruf dort noch offen. Spin-Display-Gerätedaten fehlen weiterhin laut Display-Register. Keine neue Netzfreigabe, Tailscale-Regel, Portweiterleitung, Benutzerberechtigung oder Backupaufgabe für diese Einrichtung ändern.

@@ -1,5 +1,7 @@
 # unser-kraut-ledshow-seefeld
 
+Geschäftsablage mit Videos und vollständiger Projektdokumentation: `\\nas-christoph\Business\christine-geschäft\Videos\Schaufenster-Display\00_START_HIER.html`. Die Fassung vom 16.10.2026 liegt dort unter `Codex_Fassung_16-10-26_Herbst_3D`, mit Startseite, Git-Commit, Dateimanifest und SHA-256-Prüfprotokoll. [Ablageplan und Veröffentlichungsablauf](ledshow-seefeld/NAS-ABLAGE.md).
+
 Vollständige Herbst-Show vom 16.10.2026: [LED-MP4, 192 × 128, 3:28 Minuten](ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_HERBST_20261016_192x128.mp4). Übernimmt alle 54 Tafeln der gelieferten Show mit neuen Blender-Szenen. [Original-/Neu-Vergleich, Blender-Projekt und Anleitung](ledshow-seefeld/production/herbst-show-20261016/README.md).
 
 Neue Blender-3D-Show vom 14.10.2026: [LED-MP4, 192 × 128, 30 Sekunden](ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_3D_BLENDER_20261014_192x128.mp4). [Blender-Projekt, Vorschau und Anleitung](ledshow-seefeld/production/blender-show-20261014/README.md).
