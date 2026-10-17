@@ -1,0 +1,176 @@
+{
+  "title": "Unser Kraut – Seefeld-Sortiment",
+  "date": "2026-10-17",
+  "fps": 30,
+  "seconds": 30,
+  "total_frames": 900,
+  "native_size": [
+    192,
+    128
+  ],
+  "master_size": [
+    768,
+    512
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "slug": "marke",
+      "kind": "brand",
+      "seconds": 4,
+      "frames": 120,
+      "first_frame": 1,
+      "last_frame": 120,
+      "source_card": 1,
+      "source_first": 1,
+      "source_last": 120,
+      "sample_first": 31,
+      "sample_last": 103,
+      "lines": [
+        "UNSER KRAUT",
+        "HANF & CBD"
+      ],
+      "footer": "SEEFELD",
+      "scene": "01_marke"
+    },
+    {
+      "id": 2,
+      "slug": "oele",
+      "kind": "product",
+      "seconds": 4,
+      "frames": 120,
+      "first_frame": 121,
+      "last_frame": 240,
+      "source_card": 4,
+      "source_first": 361,
+      "source_last": 480,
+      "sample_first": 391,
+      "sample_last": 463,
+      "lines": [
+        "CBD ÖLE"
+      ],
+      "footer": "UNSER KRAUT",
+      "scene": "02_oele"
+    },
+    {
+      "id": 3,
+      "slug": "tee",
+      "kind": "product",
+      "seconds": 4,
+      "frames": 120,
+      "first_frame": 241,
+      "last_frame": 360,
+      "source_card": 39,
+      "source_first": 4366,
+      "source_last": 4440,
+      "sample_first": 4384,
+      "sample_last": 4430,
+      "lines": [
+        "BIO HANFTEE"
+      ],
+      "footer": "ZUM GENIESSEN",
+      "scene": "03_tee"
+    },
+    {
+      "id": 4,
+      "slug": "einladung",
+      "kind": "invite",
+      "seconds": 3,
+      "frames": 90,
+      "first_frame": 361,
+      "last_frame": 450,
+      "source_card": 7,
+      "source_first": 736,
+      "source_last": 855,
+      "sample_first": 766,
+      "sample_last": 838,
+      "lines": [
+        "KOMM",
+        "REIN"
+      ],
+      "footer": "WIR BERATEN DICH",
+      "scene": "04_einladung"
+    },
+    {
+      "id": 5,
+      "slug": "vapes",
+      "kind": "product",
+      "seconds": 4,
+      "frames": 120,
+      "first_frame": 451,
+      "last_frame": 570,
+      "source_card": 39,
+      "source_first": 4366,
+      "source_last": 4440,
+      "sample_first": 4384,
+      "sample_last": 4430,
+      "lines": [
+        "VAPES"
+      ],
+      "footer": "18+",
+      "scene": "05_vapes",
+      "cache_reuse_allowed": false
+    },
+    {
+      "id": 6,
+      "slug": "pflege",
+      "kind": "product",
+      "seconds": 4,
+      "frames": 120,
+      "first_frame": 571,
+      "last_frame": 690,
+      "source_card": 11,
+      "source_first": 1276,
+      "source_last": 1395,
+      "sample_first": 1306,
+      "sample_last": 1378,
+      "lines": [
+        "CBD PFLEGE"
+      ],
+      "footer": "UNSER KRAUT",
+      "scene": "06_pflege"
+    },
+    {
+      "id": 7,
+      "slug": "geschenke",
+      "kind": "product",
+      "seconds": 4,
+      "frames": 120,
+      "first_frame": 691,
+      "last_frame": 810,
+      "source_card": 49,
+      "source_first": 5491,
+      "source_last": 5565,
+      "sample_first": 5509,
+      "sample_last": 5555,
+      "lines": [
+        "GESCHENKE"
+      ],
+      "footer": "ZUM MITNEHMEN",
+      "scene": "07_geschenke"
+    },
+    {
+      "id": 8,
+      "slug": "willkommen",
+      "kind": "invite",
+      "seconds": 3,
+      "frames": 90,
+      "first_frame": 811,
+      "last_frame": 900,
+      "source_card": 45,
+      "source_first": 4981,
+      "source_last": 5055,
+      "sample_first": 4999,
+      "sample_last": 5045,
+      "lines": [
+        "KOMM",
+        "GERNE REIN"
+      ],
+      "footer": "UNSER KRAUT",
+      "scene": "08_willkommen"
+    }
+  ],
+  "source_project": "ledshow-seefeld/production/herbst-show-20261016/UNSER_KRAUT_HERBST_3D.blend",
+  "source_sha256": "bcb0caa77338b863322dcb0017fe9a90ce51121edc96c8fd8eb57c335d2e82fd",
+  "source_commit": "603592164356233482e8d09033601830ff60f853"
+}

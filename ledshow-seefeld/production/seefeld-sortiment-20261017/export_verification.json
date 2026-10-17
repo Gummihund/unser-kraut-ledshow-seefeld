@@ -1,0 +1,39 @@
+{
+  "videos": [
+    {
+      "file": "UNSER_KRAUT_SEEFELD_SORTIMENT_20261017_VORSCHAU_768x512.mp4",
+      "dimensions": "768x512",
+      "fps": 30,
+      "seconds": 30,
+      "frames": 900,
+      "audio": false,
+      "full_decode": "passed",
+      "bytes": 1491915,
+      "sha256": "577164d22bd55af5efabc06185cf9219e5b79af3390c8dfe4e823f84f960eb3e"
+    },
+    {
+      "file": "UNSER_KRAUT_SEEFELD_SORTIMENT_20261017_192x128.mp4",
+      "dimensions": "192x128",
+      "fps": 30,
+      "seconds": 30,
+      "frames": 900,
+      "audio": false,
+      "full_decode": "passed",
+      "bytes": 510007,
+      "sha256": "893d7860bff64f2fc830a0e368c0dd34778dffdb459c3a1e153ab428278f24bf"
+    },
+    {
+      "file": "UNSER_KRAUT_SEEFELD_SORTIMENT_20261017_192x128_KOMPATIBEL.avi",
+      "dimensions": "192x128",
+      "fps": 30,
+      "seconds": 30,
+      "frames": 900,
+      "audio": false,
+      "full_decode": "passed",
+      "bytes": 1101092,
+      "sha256": "d0e2957705a97b9ee088a44c386660842604e3921f0cb7b7c53304ca0a360c1b"
+    }
+  ],
+  "total_cards": 8,
+  "physical_controller_test": "pending"
+}

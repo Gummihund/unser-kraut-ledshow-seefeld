@@ -2,7 +2,7 @@
 
 Antworte auf Deutsch. Lies README.md, PC-UEBERGREIFEND.md und ledshow-seefeld/display-register.md. Dieses Repository betrifft nur die beiden Displays von Unser Kraut. Beide Videos immer ohne Audiospur exportieren.
 
-Aktuelle Bahnhof-Kurzfassung vom 17.10.2026: ledshow-seefeld/production/bahnhof-kurz-20261017/README.md. Diese eigene 28-Sekunden-Variante erhält die lange Herbst-Show. Für ihre Geschäftsablage den vorhandenen Publisher mit `--show-config ledshow-seefeld/production/bahnhof-kurz-20261017/publication.json` verwenden; nicht die festgelegten 54-Tafel-Verweise der alten Fassung übernehmen.
+Aktuelle Seefeld-Sortimentsfassung vom 17.10.2026: ledshow-seefeld/production/seefeld-sortiment-20261017/README.md. Diese eigene 30-Sekunden-Variante erhält die lange Herbst-Show. Für ihre Geschäftsablage den vorhandenen Publisher mit `--show-config ledshow-seefeld/production/seefeld-sortiment-20261017/publication.json` verwenden; nicht die festgelegten 54-Tafel-Verweise der alten Fassung übernehmen.
 
 Gemeinsamer Einstieg mit eigenem Codex: START-HIER.md. Für Herstellung/Bearbeitung TOOLCHAIN.md lesen, tools/Setup-DisplayTools.ps1 verwenden und die dort festgelegten Werkzeuge nutzen. Der dokumentierte Projektstand gilt unabhängig vom persönlichen Chatverlauf. Für die Herbst-Show auch ledshow-seefeld/production/herbst-show-20261016/BAHNHOF-PRUEFUNG.md lesen. Neue Varianten unter eigenen Namen und in eigenen Produktionsordnern erstellen; Originale erhalten. Geänderte Szenen mit frischen Renderframes erzeugen. Fertige LED-Videos zusätzlich mit tools/Test-DisplayVideo.py und visuell in nativer Auflösung prüfen. Setup, Python-Umgebung und Programmdateien bleiben lokal; keine Codex-Profile oder Anmeldungen übertragen.
 

@@ -1,0 +1,161 @@
+[
+  {
+    "file": "logo.png",
+    "inherited_from": "herbst-show-20261016/assets/logo.png",
+    "sha256": "da5ae8ee34871e8aa5be0003005620cdc21ac5d385175d7e7a565520222fcdb0",
+    "original_source": {
+      "key": "logo",
+      "image_url": "https://static.wixstatic.com/media/4dd46a_d017a8282c02449eac177054c708af92~mv2.png",
+      "filename": "logo.png",
+      "source": "existing original brand logo"
+    }
+  },
+  {
+    "file": "logo_texture.png",
+    "inherited_from": "herbst-show-20261016/assets/logo_texture.png",
+    "sha256": "a4c5ad5f1ed2d83882c39311996c9568562b325776f2d32140953739556f3f9b",
+    "original_source": {
+      "key": "logo",
+      "image_url": "https://static.wixstatic.com/media/4dd46a_d017a8282c02449eac177054c708af92~mv2.png",
+      "filename": "logo.png",
+      "source": "existing original brand logo"
+    }
+  },
+  {
+    "file": "tee.jpg",
+    "inherited_from": "herbst-show-20261016/assets/tee.jpg",
+    "sha256": "dd78a3ab31d395d8befe0bcc6a9b93f4b9882ea74af8cee725f5498582790f26",
+    "original_source": {
+      "key": "tee",
+      "product_url": "https://www.unser-kraut.at/onlineshop/hanf-kräutertee-aus-österreich",
+      "image_url": "https://static.wixstatic.com/media/76f9c9_c382df17726e46e09050e99a24de6156~mv2.jpg/v1/fit/w_1440,h_1200,q_90/file.jpg",
+      "filename": "tee.jpg",
+      "size": [
+        1440,
+        1200
+      ]
+    }
+  },
+  {
+    "file": "tee_texture.png",
+    "inherited_from": "herbst-show-20261016/assets/tee_texture.png",
+    "sha256": "2bdae10518f7f1c37cf4a145062166d3199a5e85d1e47fb63f7833463caa3d27",
+    "original_source": {
+      "key": "tee",
+      "product_url": "https://www.unser-kraut.at/onlineshop/hanf-kräutertee-aus-österreich",
+      "image_url": "https://static.wixstatic.com/media/76f9c9_c382df17726e46e09050e99a24de6156~mv2.jpg/v1/fit/w_1440,h_1200,q_90/file.jpg",
+      "filename": "tee.jpg",
+      "size": [
+        1440,
+        1200
+      ]
+    }
+  },
+  {
+    "file": "trocken.jpg",
+    "inherited_from": "herbst-show-20261016/assets/trocken.jpg",
+    "sha256": "a1e69198c9caa8909c13d086108c81267003a25f713d8ac1099ff67f8eca347b",
+    "original_source": {
+      "key": "trocken",
+      "product_url": "https://www.unser-kraut.at/onlineshop/cbd-gesichtscreme-für-trockene-haut",
+      "image_url": "https://static.wixstatic.com/media/76f9c9_e7914635e8d5456ab2c0c4ae1d17b61f~mv2.jpg/v1/fit/w_1309,h_1440,q_90/file.jpg",
+      "filename": "trocken.jpg",
+      "size": [
+        1309,
+        1440
+      ]
+    }
+  },
+  {
+    "file": "trocken_texture.png",
+    "inherited_from": "herbst-show-20261016/assets/trocken_texture.png",
+    "sha256": "ff8e930f35fcd509848852d160086732160d2e07bc6945c3e842372baa37786b",
+    "original_source": {
+      "key": "trocken",
+      "product_url": "https://www.unser-kraut.at/onlineshop/cbd-gesichtscreme-für-trockene-haut",
+      "image_url": "https://static.wixstatic.com/media/76f9c9_e7914635e8d5456ab2c0c4ae1d17b61f~mv2.jpg/v1/fit/w_1309,h_1440,q_90/file.jpg",
+      "filename": "trocken.jpg",
+      "size": [
+        1309,
+        1440
+      ]
+    }
+  },
+  {
+    "file": "seife.jpg",
+    "inherited_from": "herbst-show-20261016/assets/seife.jpg",
+    "sha256": "2873ecd334db87258d6234b3c2cc464e96508afb254d5500a6b5d3e1da3acfb8",
+    "original_source": {
+      "key": "seife",
+      "product_url": "https://www.unser-kraut.at/onlineshop/cbd-seife-mit-honig-handgemachtes-spa-erlebnis",
+      "image_url": "https://static.wixstatic.com/media/76f9c9_5b89319276c04aa0a473749b593e8f49~mv2.jpg/v1/fit/w_1928,h_1440,q_90/file.jpg",
+      "filename": "seife.jpg",
+      "download_date": "2026-10-16"
+    }
+  },
+  {
+    "file": "seife_texture.png",
+    "inherited_from": "herbst-show-20261016/assets/seife_texture.png",
+    "sha256": "23288315ac3be89b064440c72cd1227e6131164d1d6247678b5c4c9b6eb11ea2",
+    "original_source": {
+      "key": "seife",
+      "product_url": "https://www.unser-kraut.at/onlineshop/cbd-seife-mit-honig-handgemachtes-spa-erlebnis",
+      "image_url": "https://static.wixstatic.com/media/76f9c9_5b89319276c04aa0a473749b593e8f49~mv2.jpg/v1/fit/w_1928,h_1440,q_90/file.jpg",
+      "filename": "seife.jpg",
+      "download_date": "2026-10-16"
+    }
+  },
+  {
+    "file": "cbd10.jpg",
+    "inherited_from": "herbst-show-20261016/assets/cbd10.jpg",
+    "sha256": "520da12928b531c2d7aac2849a31c6279f5a20bd87098fc85da3cc28df7207eb",
+    "original_source": {
+      "key": "cbd10",
+      "product_url": "https://www.unser-kraut.at/onlineshop/cbd-oel-10-prozent-vollspektrum",
+      "image_url": "https://static.wixstatic.com/media/76f9c9_15d861af82164750b724675aceda9f05~mv2.jpg/v1/fit/w_600,h_1200,q_90/file.jpg",
+      "filename": "cbd10.jpg",
+      "size": [
+        600,
+        1200
+      ]
+    }
+  },
+  {
+    "file": "cbd10_label.png",
+    "inherited_from": "herbst-show-20261016/assets/cbd10_label.png",
+    "sha256": "00f62147c7e3c3271d58d6f56d274b18d63d99ba0615c8801476376851eff749",
+    "original_source": {
+      "key": "cbd10",
+      "product_url": "https://www.unser-kraut.at/onlineshop/cbd-oel-10-prozent-vollspektrum",
+      "image_url": "https://static.wixstatic.com/media/76f9c9_15d861af82164750b724675aceda9f05~mv2.jpg/v1/fit/w_600,h_1200,q_90/file.jpg",
+      "filename": "cbd10.jpg",
+      "size": [
+        600,
+        1200
+      ]
+    }
+  },
+  {
+    "file": "cbd10_texture.png",
+    "inherited_from": "herbst-show-20261016/assets/cbd10_texture.png",
+    "sha256": "a20fa1e27fee61fc7867af5849a6cae241f5ed2a6ad5ebdf1efaba00b0967f68",
+    "original_source": {
+      "key": "cbd10",
+      "product_url": "https://www.unser-kraut.at/onlineshop/cbd-oel-10-prozent-vollspektrum",
+      "image_url": "https://static.wixstatic.com/media/76f9c9_15d861af82164750b724675aceda9f05~mv2.jpg/v1/fit/w_600,h_1200,q_90/file.jpg",
+      "filename": "cbd10.jpg",
+      "size": [
+        600,
+        1200
+      ]
+    }
+  },
+  {
+    "file": "vape-mesh-himbeere.png",
+    "inherited_from": "ledshow-seefeld/assets/raw/vape-mesh-himbeere.png",
+    "sha256": "05765cabb7e0b279892fdec86965d0d3c4e77f8aeb7a113195ff54a0838b160f",
+    "product_url": "https://www.unser-kraut.at/vapes",
+    "image_url": "https://static.wixstatic.com/media/76f9c9_7269afac671e4ad79f11e4e1b696514d~mv2.png/v1/fit/w_900,h_900,q_95/file.png",
+    "usage": "Unchanged source pixels; white-background transparency applied in Blender material only."
+  }
+]

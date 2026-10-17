@@ -1,0 +1,81 @@
+{
+  "title": "Unser Kraut – Seefeld-Sortiment · 30 Sekunden · 17.10.2026",
+  "description": "30 Sekunden, acht Tafeln: CBD Öle, Bio Hanftee, Vapes 18+, CBD Pflege und Geschenke. Zwei große Einladungen pro Runde. Für das Schaufenster-LED 192 × 128; alle Videos ohne Ton. Lange Show und erste Kurzfassung erhalten.",
+  "primary_video": "ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_SEEFELD_SORTIMENT_20261017_192x128.mp4",
+  "project_dir": "ledshow-seefeld/production/seefeld-sortiment-20261017",
+  "technical_checks": "ledshow-seefeld/production/seefeld-sortiment-20261017/export_verification.json",
+  "links": [
+    {
+      "label": "Kurzfassung fürs LED: 30 Sekunden, 192 × 128, ohne Ton",
+      "path": "ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_SEEFELD_SORTIMENT_20261017_192x128.mp4"
+    },
+    {
+      "label": "Große PC-Vorschau: 768 × 512",
+      "path": "ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_SEEFELD_SORTIMENT_20261017_VORSCHAU_768x512.mp4"
+    },
+    {
+      "label": "AVI-Alternative für den LED-Controller",
+      "path": "ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_SEEFELD_SORTIMENT_20261017_192x128_KOMPATIBEL.avi"
+    },
+    {
+      "label": "Vorschau und alle acht Tafeln",
+      "path": "ledshow-seefeld/production/seefeld-sortiment-20261017/VORSCHAU.html"
+    },
+    {
+      "label": "Blender-Projekt der Kurzfassung",
+      "path": "ledshow-seefeld/production/seefeld-sortiment-20261017/UNSER_KRAUT_SEEFELD_30S.blend"
+    },
+    {
+      "label": "Storyboard, Gestaltung, Quellen und Neu-Export",
+      "path": "ledshow-seefeld/production/seefeld-sortiment-20261017/README.md"
+    },
+    {
+      "label": "Alle acht Tafeln aus dem komprimierten LED-Video",
+      "path": "ledshow-seefeld/production/seefeld-sortiment-20261017/preview/LED_KONTAKTBOGEN.png"
+    },
+    {
+      "label": "Standort Seefeld: recherchierte Frequenz und Gestaltung",
+      "path": "ledshow-seefeld/production/seefeld-sortiment-20261017/STANDORT-SEEFELD.md"
+    },
+    {
+      "label": "Lange Herbst-Show: 3:28 Minuten, unverändert",
+      "path": "ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_HERBST_20261016_192x128.mp4"
+    },
+    {
+      "label": "Technische Exportprüfung",
+      "path": "ledshow-seefeld/production/seefeld-sortiment-20261017/export_verification.json"
+    },
+    {
+      "label": "Unabhängige LED-Videoprüfung",
+      "path": "ledshow-seefeld/production/seefeld-sortiment-20261017/independent_video_check.json"
+    },
+    {
+      "label": "Gesamtes Projekt",
+      "path": "README.md"
+    },
+    {
+      "label": "Mit eigenem Codex bearbeiten",
+      "path": "START-HIER.md"
+    },
+    {
+      "label": "Herstellungswerkzeuge einrichten",
+      "path": "TOOLCHAIN.md"
+    },
+    {
+      "label": "Display-Register",
+      "path": "ledshow-seefeld/display-register.md"
+    },
+    {
+      "label": "Ablageplan",
+      "path": "ledshow-seefeld/NAS-ABLAGE.md"
+    },
+    {
+      "label": "Dateimanifest und SHA-256",
+      "path": "DATEIMANIFEST.json"
+    },
+    {
+      "label": "Abschließendes Prüfprotokoll",
+      "path": "PRUEFPROTOKOLL.json"
+    }
+  ]
+}

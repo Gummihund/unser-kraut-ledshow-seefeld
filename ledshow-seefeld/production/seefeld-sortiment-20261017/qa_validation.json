@@ -1,0 +1,14 @@
+{
+  "reviewed_on": "2026-10-17",
+  "compressed_led_cards_reviewed": 8,
+  "temporal_samples_reviewed": 24,
+  "caption_bounds_checked_on_all_frames": 900,
+  "stationary_captions": true,
+  "blender_scenes": 8,
+  "all_file_textures_packed": true,
+  "fresh_eevee_vape_render_source_frame": 4407,
+  "fresh_render_matches_encoded_background_pixels": true,
+  "vape_original_cache_disabled": true,
+  "original_long_and_first_short_videos_and_blend_unchanged": true,
+  "physical_window_test": "pending"
+}

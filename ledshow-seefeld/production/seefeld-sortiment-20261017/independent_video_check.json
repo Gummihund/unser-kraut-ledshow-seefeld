@@ -1,0 +1,14 @@
+{
+  "file": "UNSER_KRAUT_SEEFELD_SORTIMENT_20261017_192x128.mp4",
+  "sha256": "893d7860bff64f2fc830a0e368c0dd34778dffdb459c3a1e153ab428278f24bf",
+  "bytes": 510007,
+  "expected_width": 192,
+  "expected_height": 128,
+  "expected_fps": 30,
+  "decoded_frames": 900,
+  "duration_from_frames": 30.0,
+  "audio_present": false,
+  "video_stream": "Stream #0:0[0x1](und): Video: h264 (Constrained Baseline) (avc1 / 0x31637661), yuv420p(progressive), 192x128, 134 kb/s, 30 fps, 30 tbr, 15360 tbn (default)",
+  "errors": [],
+  "passed": true
+}

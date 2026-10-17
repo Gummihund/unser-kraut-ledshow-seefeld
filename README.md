@@ -1,12 +1,14 @@
 # unser-kraut-ledshow-seefeld
 
-Aktuell für Laufkundschaft am Bahnhof: [28-Sekunden-LED-MP4](ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_BAHNHOF_KURZ_20261017_192x128.mp4), erstellt am 17.10.2026 aus der langen Herbst-Show. Sechs eigenständige Tafeln, große stehende Schrift, Einladung auf jeder Tafel und zwei große Einladungstafeln. [Vorschau](ledshow-seefeld/production/bahnhof-kurz-20261017/VORSCHAU.html) · [Storyboard, Blender und Quellen](ledshow-seefeld/production/bahnhof-kurz-20261017/README.md).
+Aktuell für Laufkundschaft am Bahnhof: [30-Sekunden-LED-MP4](ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_SEEFELD_SORTIMENT_20261017_192x128.mp4), erstellt am 17.10.2026 aus der langen Herbst-Show. Acht eigenständige Tafeln: CBD Öle, Bio Hanftee, Vapes 18+, CBD Pflege und Geschenke. Große stehende Schrift und zwei Einladungstafeln; keine zusätzliche Aufforderung auf den Produktkarten. [Vorschau](ledshow-seefeld/production/seefeld-sortiment-20261017/VORSCHAU.html) · [Storyboard, Blender und Quellen](ledshow-seefeld/production/seefeld-sortiment-20261017/README.md).
 
-Geschäftsablage der Kurzfassung mit vollständigem Projektstand: `Codex_Fassung_17-10-26_Bahnhof_28s` im bekannten NAS-Videoordner. `00_START_HIER.html` führt zur aktuellen Fassung. Die lange Herbst-Show und alle bisherigen Fassungen bleiben erhalten.
+Geschäftsablage der Kurzfassung mit vollständigem Projektstand: `Codex_Fassung_17-10-26_Seefeld_Sortiment_30s` im bekannten NAS-Videoordner. `00_START_HIER.html` führt zur aktuellen Fassung. Die lange Herbst-Show und alle bisherigen Fassungen bleiben erhalten.
+
+Die [erste 28-Sekunden-Kurzfassung](ledshow-seefeld/production/bahnhof-kurz-20261017/README.md) bleibt separat erhalten. [Standort Seefeld: Bahnhofszahlen und Einordnung](ledshow-seefeld/production/seefeld-sortiment-20261017/STANDORT-SEEFELD.md).
 
 [Start für Christine / eigenen Codex](START-HIER.md) · [Gleiche Herstellungswerkzeuge einrichten](TOOLCHAIN.md) · [Bewertung der letzten Show für Bahnhof-Laufkundschaft](ledshow-seefeld/production/herbst-show-20261016/BAHNHOF-PRUEFUNG.md)
 
-Der vollständige Stand für die gemeinsame Bearbeitung wird im Geschäfts-Videoordner zusätzlich unter `Codex_Fassung_16-10-26_Gemeinsame_Bearbeitung` abgelegt. Der Haupt-Einstieg `00_START_HIER.html` und `01_MIT_CODEX_BEARBEITEN.html` führen dorthin. Die bisherige Herbst-Fassung bleibt erhalten.
+Der frühere Stand für die gemeinsame Bearbeitung bleibt im Geschäfts-Videoordner unter `Codex_Fassung_16-10-26_Gemeinsame_Bearbeitung` erhalten. Der Haupt-Einstieg `00_START_HIER.html` und `01_MIT_CODEX_BEARBEITEN.html` führen zum aktuellen vollständigen Stand und verlinken die früheren Fassungen.
 
 Geschäftsablage mit Videos und vollständiger Projektdokumentation: `\\nas-christoph\Business\christine-geschäft\Videos\Schaufenster-Display\00_START_HIER.html`. Die Fassung vom 16.10.2026 liegt dort unter `Codex_Fassung_16-10-26_Herbst_3D`, mit Startseite, Git-Commit, Dateimanifest und SHA-256-Prüfprotokoll. [Ablageplan und Veröffentlichungsablauf](ledshow-seefeld/NAS-ABLAGE.md).
 
@@ -32,7 +34,7 @@ cd unser-kraut-ledshow-seefeld
 Die aktuelle Kurzfassung fuer LEDshow Suite / LED Max / Onbon liegt hier:
 
 ```text
-ledshow-seefeld\videos\schaufenster-unten-led\UNSER_KRAUT_BAHNHOF_KURZ_20261017_192x128.mp4
+ledshow-seefeld\videos\schaufenster-unten-led\UNSER_KRAUT_SEEFELD_SORTIMENT_20261017_192x128.mp4
 ```
 
 Ein aktuelles Register fuer die beiden Display-Standorte und die versionierten Videos liegt hier:

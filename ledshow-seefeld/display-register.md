@@ -2,7 +2,7 @@
 
 Stand: 2026-10-17
 
-Aktuelle Bahnhof-Kurzfassung: `videos/schaufenster-unten-led/UNSER_KRAUT_BAHNHOF_KURZ_20261017_192x128.mp4`. 28 Sekunden, 840 Frames, sechs eigenständige Tafeln, H.264 Constrained Baseline, 192 × 128, 30 fps, yuv420p, ohne Audio/Rotation. Hauptschrift 24,5–46 native Pixel; wiederkehrende Einladung 21 Pixel. Zwei große Einladungstafeln plus Einladung auf den Produktkarten. [Storyboard, Quellen, Blender und Prüfungen](production/bahnhof-kurz-20261017/README.md). Die lange Herbst-Show bleibt unverändert.
+Aktuelle Seefeld-Sortimentsfassung: `videos/schaufenster-unten-led/UNSER_KRAUT_SEEFELD_SORTIMENT_20261017_192x128.mp4`. 30 Sekunden, 900 Frames, acht eigenständige Tafeln, H.264 Constrained Baseline, 192 × 128, 30 fps, yuv420p, ohne Audio/Rotation. Große stehende Hauptschrift; genaue Größen und Begrenzungen in typography_check.json. Zwei große Einladungstafeln, keine zusätzliche Aufforderung auf den Produktkarten. Enthält CBD Öle, Bio Hanftee, Vapes 18+, CBD Pflege und Geschenke. [Storyboard, Quellen, Blender und Prüfungen](production/seefeld-sortiment-20261017/README.md). Die lange Herbst-Show bleibt unverändert.
 
 Gemeinsame Bearbeitung mit eigenem Codex: [START-HIER.md](../START-HIER.md), Werkzeug-Setup: [TOOLCHAIN.md](../TOOLCHAIN.md). Die lange Herbst-Show wurde auf ihre Eignung für Bahnhof-Laufkundschaft geprüft: [BAHNHOF-PRUEFUNG.md](production/herbst-show-20261016/BAHNHOF-PRUEFUNG.md). Ergebnis: technisch korrekt, als ausführliche Sortimentspräsentation brauchbar, für schnelles Vorbeigehen zu dicht und zu stark über Folgetafeln erzählt. Die empfohlene separate Kurzfassung wurde am 17.10.2026 umgesetzt; das lange Video wurde nicht verändert.
 

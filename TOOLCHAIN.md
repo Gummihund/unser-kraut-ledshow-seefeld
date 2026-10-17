@@ -41,7 +41,7 @@ Das Setup ist für Windows x64 ausgelegt. Andere Systeme benötigen passende Ble
 
 ## Vorhandene Herbst-Show bearbeiten
 
-Seit 17.10.2026 gibt es zusätzlich eine eigene [28-Sekunden-Bahnhof-Kurzfassung](ledshow-seefeld/production/bahnhof-kurz-20261017/README.md). Sie verwendet dieselben Werkzeuge und sechs ausgewählte Blender-Szenen der langen Show mit neuer großer, stehender Schrift. Ihre Skripte, ihr Storyboard und ihre Exporte sind getrennt abgelegt. Die vollständige lange Show bleibt unverändert. Für die NAS-Geschäftsablage kann der Publisher jetzt eine Git-versionierte `publication.json` über `--show-config` lesen; diese legt die korrekten Kurzfassung-Verweise und Prüfdateien fest.
+Seit 17.10.2026 gibt es zusätzlich eine eigene [30-Sekunden-Seefeld-Kurzfassung](ledshow-seefeld/production/seefeld-sortiment-20261017/README.md). Sie verwendet dieselben Werkzeuge: sieben ausgewählte Blender-Szenen der langen Show und eine neue Vapes-Szene mit dem vorhandenen Originalfoto, jeweils mit großer stehender Schrift. Ihre Skripte, ihr Storyboard und ihre Exporte sind getrennt abgelegt. Die vollständige lange Show und die erste 28-Sekunden-Variante bleiben unverändert. Für die NAS-Geschäftsablage kann der Publisher eine Git-versionierte `publication.json` über `--show-config` lesen; diese legt die korrekten Kurzfassung-Verweise und Prüfdateien fest.
 
 Quellen: `ledshow-seefeld/production/herbst-show-20261016/`. Dort stehen `.blend`, Produktbilder, Originalreferenzen, `storyboard.json` und alle Produktionsskripte. Die `.blend` enthält gepackte Texturen. Die abschließenden großen Texte entstehen mit Pillow beim Videoexport, nicht beim bloßen Öffnen der Blender-Datei.
 

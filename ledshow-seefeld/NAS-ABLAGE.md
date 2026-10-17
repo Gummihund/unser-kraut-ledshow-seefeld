@@ -2,7 +2,7 @@
 
 Stand: 17.10.2026. Zwei Ablagen haben unterschiedliche Aufgaben.
 
-Aktuelle Fassung für die Bahnhof-Laufkundschaft: `Codex_Fassung_17-10-26_Bahnhof_28s` im Geschäfts-Videoordner. 28 Sekunden, sechs Tafeln, große stehende Schrift und wiederkehrende Einladung. Der Versionsordner enthält den vollständigen geprüften Git-Projektstand einschließlich der unveränderten langen Herbst-Show. `00_START_HIER.html` führt auf die Kurzfassung und behält die Links zu den bisherigen Fassungen. [Herstellung und Prüfungen](production/bahnhof-kurz-20261017/README.md).
+Aktuelle Fassung für die Bahnhof-Laufkundschaft: `Codex_Fassung_17-10-26_Seefeld_Sortiment_30s` im Geschäfts-Videoordner. 30 Sekunden, acht Tafeln, große stehende Schrift und zwei Einladungen pro Runde. Der Versionsordner enthält den vollständigen geprüften Git-Projektstand einschließlich der unveränderten langen Herbst-Show. `00_START_HIER.html` führt auf die Kurzfassung und behält die Links zu den bisherigen Fassungen. [Herstellung und Prüfungen](production/seefeld-sortiment-20261017/README.md).
 
 Dauerhafte Nutzerpräferenz: Die zusätzliche Geschäftsablage ist für jede fertige Display-Show Teil des Auftrags und benötigt keine erneute Bestätigung. Nach vollständiger Prüfung jeweils einen datierten Versionsordner samt Quellen, Assets, Storyboard, vollständiger Dokumentation, Herkunft/Git-Commit, Dateimanifest und SHA-256-Prüfprotokoll erstellen und `00_START_HIER.html` aktualisieren. Frühere Fassungen und Originale erhalten.
 
@@ -48,12 +48,12 @@ Bei einer Wiederholung muss derselbe Commit ausgecheckt sein wie im vorhandenen 
 
 Für neue Shows einen neuen eindeutig datierten Versionsordner verwenden, die Startseite auf die neue Show abstimmen und nach vollständiger Prüfsummenprüfung den Einstieg im Video-Hauptordner aktualisieren. Dies ist ein manueller Veröffentlichungsablauf, keine automatische Synchronisierung.
 
-## Bahnhof-Kurzfassung vom 17.10.2026 veröffentlichen
+## Seefeld-Sortimentsfassung vom 17.10.2026 veröffentlichen
 
 Der vorhandene Publisher unterstützt zusätzlich `--show-config` für eine Git-versionierte JSON-Datei mit Titel, Kurzbeschreibung, Startseiten-Verweisen, primärem Video und Prüfdatei. So bleiben die Verweise der langen Herbst-Show bei deren Wiederholung erhalten und die neue Kurzfassung erhält ihre passenden Links. Im sauberen, committed Repository ausführen:
 
 ```powershell
-& .venv\Scripts\python.exe ledshow-seefeld/tools/publish_herbst_archive.py --repo . --show-config ledshow-seefeld/production/bahnhof-kurz-20261017/publication.json --destination '\\nas-christoph\Business\christine-geschäft\Videos\Schaufenster-Display\Codex_Fassung_17-10-26_Bahnhof_28s'
+& .venv\Scripts\python.exe ledshow-seefeld/tools/publish_herbst_archive.py --repo . --show-config ledshow-seefeld/production/seefeld-sortiment-20261017/publication.json --destination '\\nas-christoph\Business\christine-geschäft\Videos\Schaufenster-Display\Codex_Fassung_17-10-26_Seefeld_Sortiment_30s'
 ```
 
 Erst nach erfolgreichem vollständigem SHA-256-Vergleich und geschriebenem `PRUEFPROTOKOLL.json` die geprüften Vorlagen `ledshow-seefeld/display/00_START_HIER.html` und `01_MIT_CODEX_BEARBEITEN.html` in den Geschäfts-Hauptordner übernehmen. Vorhandene Einstiegsseiten vor einer Änderung datiert sichern, relative Verweise prüfen und die kopierten Dateibytes mit der Vorlage vergleichen. Die alten Versionsordner bleiben unverändert.
