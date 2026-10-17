@@ -1,0 +1,25 @@
+{
+  "source_commit": "603592164356233482e8d09033601830ff60f853",
+  "files": [
+    {
+      "file": "ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_HERBST_20261016_192x128.mp4",
+      "sha256": "741108d6ad327a50fce6fcf6b7bcd1d69edbbd7dd3e4cf49d4ef306b8815c660",
+      "unchanged_from_source_commit": true
+    },
+    {
+      "file": "ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_HERBST_20261016_VORSCHAU_768x512.mp4",
+      "sha256": "abc1f1c26618390c29b72199d0a0c3ae722a4abe7a5a143566ef440df5ac848f",
+      "unchanged_from_source_commit": true
+    },
+    {
+      "file": "ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_HERBST_20261016_192x128_KOMPATIBEL.avi",
+      "sha256": "47c796f2196735884b1052fa1b01620b2f116f43e8381de5ee90982fee805cbd",
+      "unchanged_from_source_commit": true
+    },
+    {
+      "file": "ledshow-seefeld/production/herbst-show-20261016/UNSER_KRAUT_HERBST_3D.blend",
+      "sha256": "bcb0caa77338b863322dcb0017fe9a90ce51121edc96c8fd8eb57c335d2e82fd",
+      "unchanged_from_source_commit": true
+    }
+  ]
+}

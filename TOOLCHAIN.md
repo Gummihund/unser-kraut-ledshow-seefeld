@@ -41,6 +41,8 @@ Das Setup ist für Windows x64 ausgelegt. Andere Systeme benötigen passende Ble
 
 ## Vorhandene Herbst-Show bearbeiten
 
+Seit 17.10.2026 gibt es zusätzlich eine eigene [28-Sekunden-Bahnhof-Kurzfassung](ledshow-seefeld/production/bahnhof-kurz-20261017/README.md). Sie verwendet dieselben Werkzeuge und sechs ausgewählte Blender-Szenen der langen Show mit neuer großer, stehender Schrift. Ihre Skripte, ihr Storyboard und ihre Exporte sind getrennt abgelegt. Die vollständige lange Show bleibt unverändert. Für die NAS-Geschäftsablage kann der Publisher jetzt eine Git-versionierte `publication.json` über `--show-config` lesen; diese legt die korrekten Kurzfassung-Verweise und Prüfdateien fest.
+
 Quellen: `ledshow-seefeld/production/herbst-show-20261016/`. Dort stehen `.blend`, Produktbilder, Originalreferenzen, `storyboard.json` und alle Produktionsskripte. Die `.blend` enthält gepackte Texturen. Die abschließenden großen Texte entstehen mit Pillow beim Videoexport, nicht beim bloßen Öffnen der Blender-Datei.
 
 Für Änderungen immer einen neuen Produktionsordner und neue Dateinamen verwenden. Der bestehende Export schreibt unter festen Namen; deshalb in einer Variante mindestens `NAME` in `finish_video.py`, den `.blend`-Dateinamen in `build_show.py` und die Vorschau-Verweise anpassen, bevor exportiert wird. Skripte für Tafeln und Zeiten sind auf die vollständige 54-Tafel-Show ausgelegt; für eine Kurzfassung müssen auch Szenenzuordnung, Framezahlen und Prüfungen entsprechend angepasst werden.

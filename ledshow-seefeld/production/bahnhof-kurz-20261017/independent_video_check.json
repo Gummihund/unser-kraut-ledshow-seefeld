@@ -1,0 +1,14 @@
+{
+  "file": "UNSER_KRAUT_BAHNHOF_KURZ_20261017_192x128.mp4",
+  "sha256": "10596a5b8be7dd5684446d0a8dfaea995aea5f7b382b601bf74ef3dfbe409667",
+  "bytes": 366560,
+  "expected_width": 192,
+  "expected_height": 128,
+  "expected_fps": 30,
+  "decoded_frames": 840,
+  "duration_from_frames": 28.0,
+  "audio_present": false,
+  "video_stream": "Stream #0:0[0x1](und): Video: h264 (Constrained Baseline) (avc1 / 0x31637661), yuv420p(progressive), 192x128, 103 kb/s, 30 fps, 30 tbr, 15360 tbn (default)",
+  "errors": [],
+  "passed": true
+}

@@ -30,6 +30,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--repo', required=True)
     parser.add_argument('--destination', required=True, help='New version folder, never the shared development checkout')
+    parser.add_argument('--show-config', help='Optional Git-tracked JSON with title, description, links, primary_video, project_dir and technical_checks')
     args = parser.parse_args()
     root = Path(args.repo).resolve()
     target = Path(args.destination).resolve()
@@ -65,23 +66,40 @@ def main():
         ('Dateiliste mit SHA-256', 'DATEIMANIFEST.json'),
         ('Abschließendes Prüfprotokoll', 'PRUEFPROTOKOLL.json'),
     ]
+    title = 'Unser Kraut – Herbst-Show 16.10.2026'
+    description = 'Vollständige Fassung: 54 Originaltafeln, 3:28 Minuten. Videos ohne Ton. Die MP4 mit 192 × 128 Pixeln ist für das Schaufenster-LED vorgesehen.'
+    primary_video = video_dir + 'UNSER_KRAUT_HERBST_20261016_192x128.mp4'
+    technical_checks = project_dir + 'export_verification.json'
+    if args.show_config:
+        config_path = (root / args.show_config).resolve()
+        if root not in config_path.parents or config_path.relative_to(root).as_posix() not in paths:
+            raise RuntimeError('Show configuration must be a Git-tracked file within the project.')
+        config = json.loads(config_path.read_text(encoding='utf-8'))
+        title = config['title']
+        description = config['description']
+        primary_video = config['primary_video']
+        project_dir = config['project_dir'].rstrip('/') + '/'
+        technical_checks = config['technical_checks']
+        links = [(item['label'], item['path']) for item in config['links']]
+    if primary_video not in paths or technical_checks not in paths:
+        raise RuntimeError('Primary video and technical checks must be present in the selected commit.')
     for _, relative in links:
         if relative not in {'DATEIMANIFEST.json', 'PRUEFPROTOKOLL.json'} and relative not in paths:
             raise RuntimeError(f'Start page link is missing from Git: {relative}')
     items = ''.join(f'<li><a href="{html.escape(link, quote=True)}">{html.escape(label)}</a></li>' for label, link in links)
     generated = {
         'START.html': ('<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width">'
-            '<title>Unser Kraut – Herbst-Show 16.10.2026</title><style>body{font:18px/1.6 system-ui;max-width:1000px;margin:40px auto;padding:0 24px;background:#10180e;color:#edf4e7}a{color:#c3ed83}li{margin:12px 0}code{overflow-wrap:anywhere}</style>'
-            '<h1>Herbst-Show · 16.10.2026</h1><p>Vollständige Fassung: 54 Originaltafeln, 3:28 Minuten. Videos ohne Ton. Die MP4 mit 192 × 128 Pixeln ist für das Schaufenster-LED vorgesehen.</p>'
+            f'<title>{html.escape(title)}</title><style>body{{font:18px/1.6 system-ui;max-width:1000px;margin:40px auto;padding:0 24px;background:#10180e;color:#edf4e7}}a{{color:#c3ed83}}li{{margin:12px 0}}code{{overflow-wrap:anywhere}}</style>'
+            f'<h1>{html.escape(title)}</h1><p>{html.escape(description)}</p>'
             f'<ul>{items}</ul><p>Vollständiger Projektstand: <code>{commit}</code>. Alle versionierten Projektdateien einschließlich älterer Shows sind enthalten. Kein Git-Verzeichnis und keine laufenden Renderjobs.</p>'
             '<p>Die technische Videoprüfung ist abgeschlossen; die Wiedergabe am echten LED-Controller bleibt vor Ort zu testen.</p></html>'),
-        'ABLAGE.md': ('# Archiv der vollständigen Herbst-Show vom 16.10.2026\n\n'
-            'START.html öffnet Videos, Blender-Projekt, Vergleichsansicht und Dokumentation.\n\n'
+        'ABLAGE.md': (f'# Archiv: {title}\n\n'
+            f'{description}\n\nSTART.html öffnet Videos, Blender-Projekt, Vorschau und Dokumentation.\n\n'
             f'Dieser Ordner ist eine eigenständige Momentaufnahme aller Git-versionierten Projektdateien aus Commit `{commit}`. '
             'Die gewohnte Ordnerstruktur bleibt erhalten, damit Vorschauen und relative Bildpfade funktionieren. '
             'Ältere Projektfassungen im übergeordneten Schaufenster-Display-Ordner bleiben unverändert.\n\n'
-            'Die aktuelle Herbst-Show liegt unter `ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_HERBST_20261016_192x128.mp4`. '
-            'Vorschau und AVI-Alternative liegen daneben. Quellprojekt, Produktbilder, Quellenliste, Storyboard, technische Prüfung und Vergleichsansicht liegen unter `ledshow-seefeld/production/herbst-show-20261016/`.\n\n'
+            f'Die aktuelle LED-Datei liegt unter `{primary_video}`. '
+            f'Vorschau und AVI-Alternative liegen daneben. Quellprojekt, Produktbilder, Quellenliste, Storyboard, technische Prüfung und Vorschau liegen unter `{project_dir}`.\n\n'
             'DATEIMANIFEST.json nennt jede Nutzdatei mit Größe und SHA-256. CHECKSUMS.sha256 enthält dieselben Prüfsummen. '
             'PRUEFPROTOKOLL.json wird erst nach erfolgreicher Prüfung aller Zieldateien erstellt. Diese drei Verwaltungsdateien sind vom eigenen Inhaltsmanifest ausgenommen.\n\n'
             'Zum Bearbeiten einen lokalen Git-Clone verwenden. Die gemeinsame Arbeitskopie liegt unter '
@@ -147,7 +165,7 @@ def main():
             raise RuntimeError(f'Metadata verification failed: {destination}')
     report = {'verified_at_utc': datetime.now(timezone.utc).isoformat(), 'git_commit': commit,
               'checked_files': len(entries), 'sha256_all_match': True,
-              'tracked_project_files': len(paths), 'video_technical_checks': 'ledshow-seefeld/production/herbst-show-20261016/export_verification.json',
+              'tracked_project_files': len(paths), 'video_technical_checks': technical_checks,
               'physical_led_playback': 'not tested', 'existing_originals': 'untouched'}
     report_path = target / 'PRUEFPROTOKOLL.json'
     if not report_path.exists():

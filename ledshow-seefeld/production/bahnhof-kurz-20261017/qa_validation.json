@@ -1,0 +1,14 @@
+{
+  "reviewed_on": "2026-10-17",
+  "compressed_led_cards_reviewed": 6,
+  "temporal_samples_reviewed": 18,
+  "caption_bounds_checked_on_all_frames": 840,
+  "stationary_captions": true,
+  "blender_scenes": 6,
+  "all_file_textures_packed": true,
+  "fresh_eevee_render_source_frame": 4407,
+  "fresh_render_matches_reused_original_pixels": true,
+  "pixel_mean_absolute_difference": 0.0,
+  "original_long_videos_and_blend_unchanged": true,
+  "physical_window_test": "pending"
+}

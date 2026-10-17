@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unser Kraut – Bahnhof, 28 Sekunden</title>
+<style>body{font:18px/1.6 system-ui,sans-serif;max-width:1080px;margin:32px auto;padding:0 22px;background:#07150d;color:#f2f7e9}h1{line-height:1.2}a{color:#c2f475}video{display:block;width:min(100%,768px);height:auto;background:#030a05;border-radius:12px}button{font:inherit;background:#c2f475;color:#122b19;border:0;border-radius:8px;padding:10px 14px;margin:5px;cursor:pointer}img{max-width:100%;height:auto}.native{image-rendering:pixelated;width:192px;border:1px solid #7eaa5b}.links{display:flex;flex-wrap:wrap;gap:20px}small{color:#c1d1b9}</style>
+<h1>Kurzfassung für die Laufkundschaft</h1>
+<p>28 Sekunden · sechs klare Tafeln · große stehende Schrift · wiederkehrende Einladung ins Geschäft.</p>
+<video id="master" controls muted loop playsinline poster="preview/LED_01.png" src="../../videos/schaufenster-unten-led/UNSER_KRAUT_BAHNHOF_KURZ_20261017_VORSCHAU_768x512.mp4"></video>
+<p>Direkt zu einer Tafel:</p>
+<div id="chapters"><button data-time="0">0 s · Hanf &amp; CBD</button><button data-time="5">5 s · Komm rein</button><button data-time="9">9 s · Bio Hanftee</button><button data-time="14">14 s · CBD Pflege</button><button data-time="19">19 s · Geschenke</button><button data-time="24">24 s · Komm gerne rein</button></div>
+<p class="links"><a href="../../videos/schaufenster-unten-led/UNSER_KRAUT_BAHNHOF_KURZ_20261017_192x128.mp4">MP4 fürs LED</a><a href="../../videos/schaufenster-unten-led/UNSER_KRAUT_BAHNHOF_KURZ_20261017_192x128_KOMPATIBEL.avi">AVI-Alternative</a><a href="README.md">Storyboard, Quellen und Bearbeiten</a></p>
+<h2>Die sechs Tafeln aus dem LED-Export</h2>
+<img src="preview/LED_KONTAKTBOGEN.png" alt="Alle sechs Tafeln der neuen 28-Sekunden-Show mit ihren Standzeiten">
+<h2>Originalgröße des LED-Videos</h2>
+<p><small>Diese Ansicht bleibt bei 192 × 128 Bildpunkten. Für die Wirkung am Schaufenster sind zusätzlich Abstand, Tageslicht und Glasreflexionen entscheidend.</small></p>
+<video class="native" controls muted loop playsinline src="../../videos/schaufenster-unten-led/UNSER_KRAUT_BAHNHOF_KURZ_20261017_192x128.mp4"></video>
+<p><a href="../../videos/schaufenster-unten-led/UNSER_KRAUT_HERBST_20261016_192x128.mp4">Lange Herbst-Show ansehen – unverändert erhalten</a></p>
+<script>const video=document.getElementById('master');document.querySelectorAll('[data-time]').forEach(button=>button.addEventListener('click',()=>{video.currentTime=Number(button.dataset.time);video.play()}));</script>
+</html>

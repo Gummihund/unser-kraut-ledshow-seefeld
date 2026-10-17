@@ -1,0 +1,39 @@
+{
+  "videos": [
+    {
+      "file": "UNSER_KRAUT_BAHNHOF_KURZ_20261017_VORSCHAU_768x512.mp4",
+      "dimensions": "768x512",
+      "fps": 30,
+      "seconds": 28,
+      "frames": 840,
+      "audio": false,
+      "full_decode": "passed",
+      "bytes": 1137491,
+      "sha256": "735ef9d54dbb1ce739e10e80d5ca0becd0740e186c5c528fc407d74d311d6584"
+    },
+    {
+      "file": "UNSER_KRAUT_BAHNHOF_KURZ_20261017_192x128.mp4",
+      "dimensions": "192x128",
+      "fps": 30,
+      "seconds": 28,
+      "frames": 840,
+      "audio": false,
+      "full_decode": "passed",
+      "bytes": 366560,
+      "sha256": "10596a5b8be7dd5684446d0a8dfaea995aea5f7b382b601bf74ef3dfbe409667"
+    },
+    {
+      "file": "UNSER_KRAUT_BAHNHOF_KURZ_20261017_192x128_KOMPATIBEL.avi",
+      "dimensions": "192x128",
+      "fps": 30,
+      "seconds": 28,
+      "frames": 840,
+      "audio": false,
+      "full_decode": "passed",
+      "bytes": 956896,
+      "sha256": "dd384bb7b6a5d9eb73cabcd2102a3befd8744b75d63c1c79cbb6bf9694e7cf76"
+    }
+  ],
+  "total_cards": 6,
+  "physical_controller_test": "pending"
+}

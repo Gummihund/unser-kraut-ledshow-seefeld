@@ -1,0 +1,26 @@
+{
+  "title": "Unser Kraut – Bahnhof-Kurzfassung · 17.10.2026",
+  "description": "28 Sekunden, sechs Tafeln, große ruhige Schrift und wiederkehrende Einladung zum Reinkommen. Die 192 × 128-MP4 ist für das untere Schaufenster-LED. Alle Videos ohne Ton. Die lange Herbst-Show bleibt erhalten.",
+  "primary_video": "ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_BAHNHOF_KURZ_20261017_192x128.mp4",
+  "project_dir": "ledshow-seefeld/production/bahnhof-kurz-20261017",
+  "technical_checks": "ledshow-seefeld/production/bahnhof-kurz-20261017/export_verification.json",
+  "links": [
+    {"label": "Kurzfassung fürs LED: 28 Sekunden, 192 × 128, ohne Ton", "path": "ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_BAHNHOF_KURZ_20261017_192x128.mp4"},
+    {"label": "Große PC-Vorschau: 768 × 512", "path": "ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_BAHNHOF_KURZ_20261017_VORSCHAU_768x512.mp4"},
+    {"label": "AVI-Alternative für den LED-Controller", "path": "ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_BAHNHOF_KURZ_20261017_192x128_KOMPATIBEL.avi"},
+    {"label": "Vorschau und alle sechs Tafeln", "path": "ledshow-seefeld/production/bahnhof-kurz-20261017/VORSCHAU.html"},
+    {"label": "Blender-Projekt der Kurzfassung", "path": "ledshow-seefeld/production/bahnhof-kurz-20261017/UNSER_KRAUT_BAHNHOF_28S.blend"},
+    {"label": "Storyboard, Gestaltung, Quellen und Neu-Export", "path": "ledshow-seefeld/production/bahnhof-kurz-20261017/README.md"},
+    {"label": "Alle sechs Tafeln aus dem komprimierten LED-Video", "path": "ledshow-seefeld/production/bahnhof-kurz-20261017/preview/LED_KONTAKTBOGEN.png"},
+    {"label": "Lange Herbst-Show: 3:28 Minuten, unverändert", "path": "ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_HERBST_20261016_192x128.mp4"},
+    {"label": "Technische Exportprüfung", "path": "ledshow-seefeld/production/bahnhof-kurz-20261017/export_verification.json"},
+    {"label": "Unabhängige LED-Videoprüfung", "path": "ledshow-seefeld/production/bahnhof-kurz-20261017/independent_video_check.json"},
+    {"label": "Gesamtes Projekt", "path": "README.md"},
+    {"label": "Mit eigenem Codex bearbeiten", "path": "START-HIER.md"},
+    {"label": "Herstellungswerkzeuge einrichten", "path": "TOOLCHAIN.md"},
+    {"label": "Display-Register", "path": "ledshow-seefeld/display-register.md"},
+    {"label": "Ablageplan", "path": "ledshow-seefeld/NAS-ABLAGE.md"},
+    {"label": "Dateimanifest und SHA-256", "path": "DATEIMANIFEST.json"},
+    {"label": "Abschließendes Prüfprotokoll", "path": "PRUEFPROTOKOLL.json"}
+  ]
+}

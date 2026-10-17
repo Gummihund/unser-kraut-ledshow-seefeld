@@ -1,0 +1,188 @@
+{
+  "cards": [
+    {
+      "card": 1,
+      "captions": [
+        {
+          "text": "UNSER KRAUT",
+          "native_font_px": 24.5,
+          "native_bbox": [
+            5.75,
+            10.0,
+            186.25,
+            30.0
+          ]
+        },
+        {
+          "text": "HANF & CBD",
+          "native_font_px": 28.75,
+          "native_bbox": [
+            5.62,
+            45.0,
+            186.38,
+            68.25
+          ]
+        },
+        {
+          "text": "KOMM REIN",
+          "native_font_px": 21,
+          "native_bbox": [
+            33.75,
+            106.0,
+            158.25,
+            123.5
+          ]
+        }
+      ]
+    },
+    {
+      "card": 2,
+      "captions": [
+        {
+          "text": "KOMM",
+          "native_font_px": 43,
+          "native_bbox": [
+            27.0,
+            8.0,
+            165.0,
+            41.75
+          ]
+        },
+        {
+          "text": "REIN",
+          "native_font_px": 46,
+          "native_bbox": [
+            40.0,
+            51.0,
+            152.0,
+            86.0
+          ]
+        },
+        {
+          "text": "WIR BERATEN DICH",
+          "native_font_px": 17,
+          "native_bbox": [
+            12.0,
+            106.0,
+            180.0,
+            120.5
+          ]
+        }
+      ]
+    },
+    {
+      "card": 3,
+      "captions": [
+        {
+          "text": "BIO HANFTEE",
+          "native_font_px": 26.5,
+          "native_bbox": [
+            5.0,
+            9.0,
+            187.0,
+            30.5
+          ]
+        },
+        {
+          "text": "KOMM REIN",
+          "native_font_px": 21,
+          "native_bbox": [
+            33.75,
+            106.0,
+            158.25,
+            123.5
+          ]
+        }
+      ]
+    },
+    {
+      "card": 4,
+      "captions": [
+        {
+          "text": "CBD PFLEGE",
+          "native_font_px": 27.75,
+          "native_bbox": [
+            5.62,
+            9.0,
+            186.38,
+            31.5
+          ]
+        },
+        {
+          "text": "KOMM REIN",
+          "native_font_px": 21,
+          "native_bbox": [
+            33.75,
+            106.0,
+            158.25,
+            123.5
+          ]
+        }
+      ]
+    },
+    {
+      "card": 5,
+      "captions": [
+        {
+          "text": "GESCHENKE",
+          "native_font_px": 28,
+          "native_bbox": [
+            6.12,
+            9.0,
+            185.88,
+            31.5
+          ]
+        },
+        {
+          "text": "KOMM REIN",
+          "native_font_px": 21,
+          "native_bbox": [
+            33.75,
+            106.0,
+            158.25,
+            123.5
+          ]
+        }
+      ]
+    },
+    {
+      "card": 6,
+      "captions": [
+        {
+          "text": "KOMM",
+          "native_font_px": 43,
+          "native_bbox": [
+            27.0,
+            8.0,
+            165.0,
+            41.75
+          ]
+        },
+        {
+          "text": "GERNE REIN",
+          "native_font_px": 28.75,
+          "native_bbox": [
+            5.5,
+            51.0,
+            186.5,
+            74.25
+          ]
+        },
+        {
+          "text": "UNSER KRAUT",
+          "native_font_px": 20,
+          "native_bbox": [
+            22.12,
+            106.0,
+            169.88,
+            123.0
+          ]
+        }
+      ]
+    }
+  ],
+  "all_bounds_passed": true,
+  "main_font_minimum_native_px": 24,
+  "footer_minimum_native_px": 16,
+  "caption_motion": "stationary"
+}

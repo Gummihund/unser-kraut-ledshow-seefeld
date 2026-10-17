@@ -1,10 +1,10 @@
 # Gemeinsam mit eigenem Codex am Display arbeiten
 
-Stand: 16.10.2026. Einstieg für Christine und weitere berechtigte Mitarbeitende auf Windows.
+Stand: 17.10.2026. Einstieg für Christine und weitere berechtigte Mitarbeitende auf Windows.
 
 ## Video ansehen
 
-Gewohnter Geschäftsordner mit der veröffentlichten Herbst-Show:
+Gewohnter Geschäftsordner mit der veröffentlichten Bahnhof-Kurzfassung und der langen Herbst-Show:
 
 ```text
 \\nas-christoph\Business\christine-geschäft\Videos\Schaufenster-Display
@@ -21,10 +21,10 @@ Gemeinsamer NAS-Projektordner:
 Letzte fertige Show für das LED unten im Schaufenster:
 
 ```text
-ledshow-seefeld\videos\schaufenster-unten-led\UNSER_KRAUT_HERBST_20261016_192x128.mp4
+ledshow-seefeld\videos\schaufenster-unten-led\UNSER_KRAUT_BAHNHOF_KURZ_20261017_192x128.mp4
 ```
 
-Die Datei mit `VORSCHAU_768x512` im Namen ist die größere PC-Vorschau. Vergleich, Tafelauswahl und Texte: [VORSCHAU.html](ledshow-seefeld/production/herbst-show-20261016/VORSCHAU.html). Falls der Browser NAS-Videos blockiert, die Vorschau im lokalen Git-Clone öffnen.
+Die Datei mit `VORSCHAU_768x512` im Namen ist die größere PC-Vorschau. Vorschau und Tafelauswahl: [Bahnhof-Kurzfassung](ledshow-seefeld/production/bahnhof-kurz-20261017/VORSCHAU.html). Die [lange Herbst-Show mit Original-/Neu-Vergleich](ledshow-seefeld/production/herbst-show-20261016/VORSCHAU.html) bleibt unverändert erhalten. Falls der Browser NAS-Videos blockiert, die Vorschau im lokalen Git-Clone öffnen.
 
 ## Einmal auf dem eigenen Windows-PC einrichten
 

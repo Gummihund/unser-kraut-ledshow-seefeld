@@ -1,5 +1,9 @@
 # unser-kraut-ledshow-seefeld
 
+Aktuell für Laufkundschaft am Bahnhof: [28-Sekunden-LED-MP4](ledshow-seefeld/videos/schaufenster-unten-led/UNSER_KRAUT_BAHNHOF_KURZ_20261017_192x128.mp4), erstellt am 17.10.2026 aus der langen Herbst-Show. Sechs eigenständige Tafeln, große stehende Schrift, Einladung auf jeder Tafel und zwei große Einladungstafeln. [Vorschau](ledshow-seefeld/production/bahnhof-kurz-20261017/VORSCHAU.html) · [Storyboard, Blender und Quellen](ledshow-seefeld/production/bahnhof-kurz-20261017/README.md).
+
+Geschäftsablage der Kurzfassung mit vollständigem Projektstand: `Codex_Fassung_17-10-26_Bahnhof_28s` im bekannten NAS-Videoordner. `00_START_HIER.html` führt zur aktuellen Fassung. Die lange Herbst-Show und alle bisherigen Fassungen bleiben erhalten.
+
 [Start für Christine / eigenen Codex](START-HIER.md) · [Gleiche Herstellungswerkzeuge einrichten](TOOLCHAIN.md) · [Bewertung der letzten Show für Bahnhof-Laufkundschaft](ledshow-seefeld/production/herbst-show-20261016/BAHNHOF-PRUEFUNG.md)
 
 Der vollständige Stand für die gemeinsame Bearbeitung wird im Geschäfts-Videoordner zusätzlich unter `Codex_Fassung_16-10-26_Gemeinsame_Bearbeitung` abgelegt. Der Haupt-Einstieg `00_START_HIER.html` und `01_MIT_CODEX_BEARBEITEN.html` führen dorthin. Die bisherige Herbst-Fassung bleibt erhalten.
@@ -25,10 +29,10 @@ git clone https://github.com/Gummihund/unser-kraut-ledshow-seefeld.git
 cd unser-kraut-ledshow-seefeld
 ```
 
-Die fertige Offline-Datei fuer LEDshow Suite / LED Max / Onbon liegt hier:
+Die aktuelle Kurzfassung fuer LEDshow Suite / LED Max / Onbon liegt hier:
 
 ```text
-ledshow-seefeld\output\mp4\unser-kraut-seefeld-ledshow-192x128.mp4
+ledshow-seefeld\videos\schaufenster-unten-led\UNSER_KRAUT_BAHNHOF_KURZ_20261017_192x128.mp4
 ```
 
 Ein aktuelles Register fuer die beiden Display-Standorte und die versionierten Videos liegt hier:

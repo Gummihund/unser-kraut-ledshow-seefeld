@@ -48,6 +48,8 @@ Offizielle Dokumentation:
 
 ## Zusätzliche Geschäftsablage seit 16.10.2026
 
+Aktuell seit 17.10.2026: Die 28-Sekunden-Bahnhof-Kurzfassung samt Quellen und vollständigem Projektstand liegt unter `Codex_Fassung_17-10-26_Bahnhof_28s`. `00_START_HIER.html` im Hauptordner führt dorthin. Alle Fassungen vom 16.10.2026 und die lange Show bleiben erhalten. [Bearbeiten und Veröffentlichen der Kurzfassung](ledshow-seefeld/production/bahnhof-kurz-20261017/README.md).
+
 Fertige Videos und der gesamte zugehörige versionierte Projektstand werden zusätzlich im gewohnten Geschäftsordner abgelegt:
 
 `\\nas-christoph\Business\christine-geschäft\Videos\Schaufenster-Display`
